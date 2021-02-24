@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bamboo</title>
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Jura:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <header class="header">
+                <div class="container">
+                    <div class="header__inner">
+                        <div class="header__menu-wrap menu-wrap">
+                            <button class="header__menu-burger menu-burger">
+                                <div class="menu-burger__line"></div>
+                            </button>
+
+                            <div class="header__navigation-wrap navigation-wrap">
+                                <nav class="header__menu-top menu-top">
+                                    <ul class="header__social-items social-items">
+                                        <li class="header__close-wrap social-item">
+                                            <button class="header__menu-close menu-close">
+                                                <svg class="menu-close__icon social__item-icon" viewBox="0 0 24 24"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M23.0307 0.969237C22.5868 0.52531 21.8677 0.52531 21.4239 0.969237L12.0001 10.393L2.57627 0.969237C2.13235 0.52531 1.41324 0.52531 0.96942 0.969237C0.525493 1.41317 0.525493 2.13227 0.96942 2.57609L10.3932 11.9999L0.96942 21.4237C0.525493 21.8676 0.525493 22.5867 0.96942 23.0305C1.19133 23.2525 1.48217 23.3635 1.7729 23.3635C2.06363 23.3635 2.35436 23.2525 2.57638 23.0305L12.0002 13.6067L21.424 23.0305C21.6459 23.2525 21.9367 23.3635 22.2275 23.3635C22.5182 23.3635 22.8089 23.2525 23.0309 23.0305C23.4749 22.5866 23.4749 21.8675 23.0309 21.4237L13.6071 11.9999L23.0309 2.57609C23.4747 2.13227 23.4747 1.41317 23.0307 0.969237Z"
+                                                        fill="#131313" />
+                                                </svg>
+                                            </button>
+                                        </li>
+                                        <li class="header__social-item social-item">
+                                            <a href="#" class="header__social-link social__item-link">
+                                                <span class="social__icon-wrap">
+                                                    <svg class="social__item-icon" width="100%" height="100%"
+                                                        viewBox="0 0 30 30" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M15.005 7.29752C10.7512 7.29752 7.3075 10.745 7.3075 14.995C7.3075 19.2488 10.755 22.6925 15.005 22.6925C19.2587 22.6925 22.7025 19.245 22.7025 14.995C22.7025 10.7413 19.255 7.29752 15.005 7.29752ZM15.005 19.9913C12.2437 19.9913 10.0087 17.755 10.0087 14.995C10.0087 12.235 12.245 9.99877 15.005 9.99877C17.765 9.99877 20.0012 12.235 20.0012 14.995C20.0025 17.755 17.7662 19.9913 15.005 19.9913Z"
+                                                            fill="white" />
+                                                        <path
+                                                            d="M21.1844 0.0965679C18.4244 -0.0321821 11.5882 -0.0259321 8.82568 0.0965679C6.39818 0.210318 4.25693 0.796568 2.53068 2.52282C-0.35432 5.40782 0.0144296 9.29532 0.0144296 14.9966C0.0144296 20.8316 -0.31057 24.6291 2.53068 27.4703C5.42693 30.3653 9.37068 29.9866 15.0044 29.9866C20.7844 29.9866 22.7794 29.9903 24.8232 29.1991C27.6019 28.1203 29.6994 25.6366 29.9044 21.1753C30.0344 18.4141 30.0269 11.5791 29.9044 8.81657C29.6569 3.55032 26.8307 0.356568 21.1844 0.0965679ZM25.5532 25.5616C23.6619 27.4528 21.0382 27.2841 14.9682 27.2841C8.71818 27.2841 6.21193 27.3766 4.38318 25.5428C2.27693 23.4466 2.65818 20.0803 2.65818 14.9766C2.65818 8.07032 1.94943 3.09657 8.88068 2.74157C10.4732 2.68532 10.9419 2.66657 14.9507 2.66657L15.0069 2.70407C21.6682 2.70407 26.8944 2.00657 27.2082 8.93657C27.2794 10.5178 27.2957 10.9928 27.2957 14.9953C27.2944 21.1728 27.4119 23.6941 25.5532 25.5616Z"
+                                                            fill="white" />
+                                                        <path
+                                                            d="M23.0075 8.79249C24.0009 8.79249 24.8062 7.98716 24.8062 6.99374C24.8062 6.00032 24.0009 5.19499 23.0075 5.19499C22.0141 5.19499 21.2087 6.00032 21.2087 6.99374C21.2087 7.98716 22.0141 8.79249 23.0075 8.79249Z"
+                                                            fill="white" />
+                                                    </svg>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="header__social-item social-item">
+                                            <a href="#" class="header__social-link social__item-link">
+                                                <span class="social__icon-wrap social__icon-wrap--size">
+                                                    <svg class="social__item-icon" width="100%" height="100%"
+                                                        viewBox="0 0 40 26" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M20.2417 25.5C26.0283 25.5 23.965 21.8367 24.4117 20.7833C24.405 19.9967 24.3983 19.24 24.425 18.78C24.7917 18.8833 25.6567 19.3217 27.4433 21.0583C30.2017 23.8417 30.9067 25.5 33.135 25.5H37.2367C38.5367 25.5 39.2133 24.9617 39.5517 24.51C39.8783 24.0733 40.1983 23.3067 39.8483 22.1133C38.9333 19.24 33.5967 14.2783 33.265 13.755C33.315 13.6583 33.395 13.53 33.4367 13.4633H33.4333C34.4867 12.0717 38.5067 6.04833 39.0983 3.63833C39.1 3.635 39.1017 3.63 39.1017 3.625C39.4217 2.525 39.1283 1.81167 38.825 1.40833C38.3683 0.805 37.6417 0.5 36.66 0.5H32.5583C31.185 0.5 30.1433 1.19167 29.6167 2.45333C28.735 4.695 26.2583 9.305 24.4017 10.9367C24.345 8.625 24.3833 6.86 24.4133 5.54833C24.4733 2.99 24.6667 0.5 22.0117 0.5H15.565C13.9017 0.5 12.31 2.31667 14.0333 4.47333C15.54 6.36333 14.575 7.41667 14.9 12.66C13.6333 11.3017 11.38 7.63333 9.78667 2.945C9.34 1.67667 8.66333 0.501667 6.75833 0.501667H2.65667C0.993333 0.501667 0 1.40833 0 2.92667C0 6.33667 7.54833 25.5 20.2417 25.5ZM6.75833 3.00167C7.12 3.00167 7.15667 3.00167 7.425 3.76333C9.05667 8.56833 12.7167 15.6783 15.39 15.6783C17.3983 15.6783 17.3983 13.62 17.3983 12.845L17.3967 6.675C17.2867 4.63333 16.5433 3.61667 16.055 3L21.9017 3.00667C21.905 3.035 21.8683 9.83167 21.9183 11.4783C21.9183 13.8167 23.775 15.1567 26.6733 12.2233C29.7317 8.77167 31.8467 3.61167 31.9317 3.40167C32.0567 3.10167 32.165 3 32.5583 3H36.66H36.6767C36.675 3.005 36.675 3.01 36.6733 3.015C36.2983 4.765 32.5967 10.3417 31.3583 12.0733C31.3383 12.1 31.32 12.1283 31.3017 12.1567C30.7567 13.0467 30.3133 14.03 31.3767 15.4133H31.3783C31.475 15.53 31.7267 15.8033 32.0933 16.1833C33.2333 17.36 37.1433 21.3833 37.49 22.9833C37.26 23.02 37.01 22.9933 33.135 23.0017C32.31 23.0017 31.665 21.7683 29.2033 19.285C26.99 17.1317 25.5533 16.2517 24.245 16.2517C21.705 16.2517 21.89 18.3133 21.9133 20.8067C21.9217 23.51 21.905 22.655 21.9233 22.825C21.775 22.8833 21.35 23 20.2417 23C9.66667 23 2.78 6.215 2.515 3.00667C2.60667 2.99833 3.86833 3.00333 6.75833 3.00167Z"
+                                                            fill="white" />
+                                                    </svg>
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+
+                                <div class="header__menu-block">
+                                    <a href="index.html" class="header-logo logo">
+                                        <picture>
+                                            <source srcset="images/logo-menu-mini.svg" media="(max-width: 400px)">
+                                            <img src="images/logo-menu.svg" alt="">
+                                        </picture>
+                                    </a>
+
+                                    <nav class="header__menu menu">
+                                        <div class="header-menu__list-wrap menu__list-wrap">
+                                            <ul class="header-menu__list menu__list header-menu__list--mr">
+                                                <li class="header-menu__item menu__item"><a href="index.html#about-us" class="header-menu__link menu__list-link">О нас</a></li>
+                                                <li class="header-menu__item menu__item"><a href="index.html#benefits" class="header-menu__link menu__list-link">Преимущества</a></li>
+                                                <li class="header-menu__item menu__item"><a href="index.html#gallery" class="header-menu__link menu__list-link">Галерея</a></li>
+                                                <li class="header-menu__item menu__item"><a href="#" class="header-menu__link menu__list-link">Акции</a></li>
+                                                <li class="header-menu__item menu__item"><a href="index.html#services" class="header-menu__link menu__list-link">Услуги</a></li>
+                                            </ul>
+                                            <ul class="header-menu__list menu__list">
+                                                <li class="header-menu__item menu__item"><a href="index.html#certificates" class="header-menu__link menu__list-link">Сертификаты</a></li>
+                                                <li class="header-menu__item menu__item"><a href="index.html#review" class="header-menu__link menu__list-link">Отзывы</a></li>
+                                                <li class="header-menu__item menu__item"><a href="index.html#contact" class="header-menu__link menu__list-link">Контакты</a></li>
+                                            </ul>
+                                        </div>
+                                    </nav>
+
+                                    <p class="header__text-time">
+                                        Работаем с <time datetime="2020-05-15 10:00"> 10:00</time> до <time datetime="2020-05-15 22:00">22:00</time>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="tel:73433282297" class="header__tel tel">
+                            <span class="tel__text">+7 (343) 328-22-97</span>
+                            <svg class="tel-img" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M25.2919 19.0814L21.6635 15.453C20.3677 14.1572 18.1647 14.6755 17.6464 16.3601C17.2576 17.5264 15.9618 18.1743 14.7955 17.9151C12.2038 17.2672 8.70504 13.898 8.05711 11.1767C7.66836 10.0104 8.44587 8.71453 9.61213 8.32583C11.2967 7.80749 11.8151 5.60455 10.5192 4.3087L6.89085 0.680321C5.85417 -0.226774 4.29915 -0.226774 3.39206 0.680321L0.929942 3.14243C-1.53217 5.73413 1.18911 12.6021 7.2796 18.6926C13.3701 24.7831 20.2381 27.634 22.8298 25.0423L25.2919 22.5802C26.1991 21.5435 26.1991 19.9885 25.2919 19.0814Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                        <button class="header__btn btn" data-fancybox data-src="#modal-record">Онлайн запись</button>
+                    </div>
+                </div>
+            </header>
+
+            <section class="mainblock">
+                <div class="container">
+                    <div class="mainblock__inner">
+                        <a href="#" class="mainblock__logo logo">
+                            <img src="images/logo.svg" alt="">
+                        </a>
+                        <h1 class="mainblock__title mainblock__title--width mainblock__figure-title">Классические массажы
+                        </h1>
+                        <p class="mainblock-text">
+                            Комплексное оздоровление и повышение работоспособности. 30 минут – только спина, 60 минут – общее.
+                        </p>
+                    </div>
+                    <a href="#correction" class="mainblock__link-down link__down">
+                        <span class="mainblock-link__text">Вниз</span>
+                    </a>
+                </div>
+            </section>
+
+
+
+            <section id="correction" class="correction">
+                <div class="container">
+                    <h2 class="correction__title title-center">
+                        Программы классического массажа
+                    </h2>
+
+                    <article class="correction__item varieties">
+
+                        <div class="correction-wrap__content varieties-wrap__content">
+                            <div class="correction__content">
+                                <div class="correction__content-inner">
+                                    <h3 class="correction__content-title title-three">
+                                        Антицеллюлитный массаж
+                                    </h3>
+                                    <p class="correction__text">
+                                        Образование целлюлита является одной из самых распространенных проблем, которая непременно вызывает огорчение и заставляет бросить все силы на борьбу с этим неприятным явлением. К числу процедур, эффективность которых не вызывает сомнения, относят ручной
+                                        антицеллюлитный массаж. Этот вид массажа при помощи особых механических приемов позволяет разогреть ткани и, благодаря дроблению жировых отложений, обеспечивает заметный лимфодренажный эффект.
+                                    </p>
+                                    <ul class="correction__time time">
+                                        <li class="time__item correction__time-item time-item--dec">
+                                            <div class="time__title correction__time-title">1 час</div>
+                                            <span class="time__text correction__time-text">Продолжительность</span>
+                                        </li>
+                                        <li class="time__item correction__time-item">
+                                            <div class="time__title correction__time-title">Антицеллюлитное обертывание
+                                            </div>
+                                            <span class="time__text correction__time-text">Дополнительно можно
+                                                заказать</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="correction__price price">
+                                        <li class="price__item correction__price-item">
+                                            <span class="price__title correction__price-title">Разовое посещение </span>
+                                            <span class="price__text correction__price-num">2 400 руб.</span>
+                                        </li>
+                                        <li class="price__item correction__price-item">
+                                            <span class="price__title correction__price-title"> Цена</span>
+                                            <span class="price__text correction__price-num">2 800 руб.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="correction__btns varieties-btns">
+                                <button class="correction__btn btn" data-fancybox data-src="#modal-record">
+                                    Записаться
+                                </button>
+                                <button id="more-6" data-fancybox data-src=".modal-1" class="varieties-detailed btn-link">Подробнее</button>
+                            </div>
+                        </div>
+
+                        <div class="correction__img varieties-img">
+                            <img src="images/correct-6.jpg" alt="">
+                        </div>
+
+                        <div class="modal-1 modal correction__modal" style="display: none;">
+                            <div class="modal-body">
+                                <div class="modal__container">
+                                    <div class="modal-top__wrap">
+                                        <h3 class="modal__title title-three">Антицеллюлитный массаж</h3>
+                                        <button data-fancybox-close class="modal-close">
+                                            <svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M27.2728 0H2.7273C1.22382 0 0 1.22312 0 2.7273V27.2728C0 28.7769 1.22382 30.0001 2.7273 30.0001H27.2728C28.7762 30.0001 30.0001 28.7769 30.0001 27.2728V2.7273C30 1.22312 28.7762 0 27.2728 0ZM28.6364 27.2728C28.6364 28.0245 28.0251 28.6364 27.2728 28.6364H2.7273C1.97489 28.6364 1.36368 28.0245 1.36368 27.2728V2.7273C1.36368 1.97559 1.97495 1.36368 2.7273 1.36368H27.2728C28.0252 1.36368 28.6364 1.97559 28.6364 2.7273V27.2728Z"
+                                                    fill="white" />
+                                                <path
+                                                    d="M21.6187 8.38153C21.3523 8.11517 20.9209 8.11517 20.6546 8.38153L15.0003 14.0358L9.34601 8.38153C9.07965 8.11517 8.64819 8.11517 8.3819 8.38153C8.11554 8.64789 8.11554 9.07935 8.3819 9.34564L14.0362 14.9999L8.3819 20.6542C8.11554 20.9206 8.11554 21.352 8.3819 21.6183C8.51504 21.7515 8.68955 21.8181 8.86398 21.8181C9.03842 21.8181 9.21286 21.7515 9.34607 21.6183L15.0004 15.964L20.6546 21.6183C20.7878 21.7515 20.9623 21.8181 21.1367 21.8181C21.3112 21.8181 21.4856 21.7515 21.6188 21.6183C21.8852 21.352 21.8852 20.9205 21.6188 20.6542L15.9645 14.9999L21.6188 9.34564C21.885 9.07935 21.885 8.64789 21.6187 8.38153Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <p class="modal-text">
+                                        Антицеллюлитный массаж представляет собой комплекс процедур, направленных на активизацию обмена веществ в подкожной жировой прослойке.
+                                    </p>
+                                    <p class="modal-text">
+                                        Антицеллюлитный массаж выполняют в соответствии с разработанными технологиями. До начала процедуры кожу следует распарить и очистить. В процессе массажа важно правильно выполнять движения. Воздействие по часовой стрелке допускается с нажимом. В обратном
+                                        направлении возможны только легкие поглаживания.
+                                    </p>
+                                    <article class="modal__block">
+                                        <div class="modal__block-content">
+                                            <div class="modal-content__block modal-programms">
+                                                <h5 class="modal-programms__title">
+                                                    Программа
+                                                </h5>
+                                                <ul class="modal-programms__list">
+                                                    <li class="modal-programms__item"> Антицеллюлитный или лимфодренажный массаж
+                                                    </li>
+                                                    <li class="modal-programms__item">Скрабирование</li>
+                                                    <li class="modal-programms__item">Фитобочка</li>
+                                                    <li class="modal-programms__item">Виски-пеленание</li>
+                                                    <li class="modal-programms__item">Чайная церемония</li>
+                                                </ul>
+                                            </div>
+                                            <ul class="modal-content__block correction__time time">
+                                                <li class="time__item correction__time-item time-item--dec">
+                                                    <div class="time__title correction__time-title">2 часа 45 мин</div>
+                                                    <span class="time__text correction__time-text">Продолжительность</span>
+                                                </li>
+                                                <li class="time__item correction__time-item">
+                                                    <div class="time__title correction__time-title">Массаж лица</div>
+                                                    <span class="time__text correction__time-text">Дополнительно можно
+                                                        заказать</span>
+                                                </li>
+                                            </ul>
+                                            <ul class="modal-content__block correction__price price">
+                                                <li class="price__item correction__price-item">
+                                                    <span class="price__title correction__price-title">Всего тела</span>
+                                                    <span class="price__text correction__price-num">3 800 руб.</span>
+                                                </li>
+                                                <li class="price__item correction__price-item">
+                                                    <span class="price__title correction__price-title">Только ног
+                                                    </span>
+                                                    <span class="price__text correction__price-num">2 700 руб.</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="modal__block-img">
+                                            <img src="images/massage1.jpg" alt="">
+                                        </div>
+                                    </article>
+                                </div>
+                                <h3 class="modal__swiper-title title-three">
+                                    Галерея
+                                </h3>
+                                <div id="modal__swiper-2" class="modal__swiper-container swiper-container">
+                                    <div class="modal__swiper-wrapper swiper-wrapper">
+                                        <div class="modal__swiper-slide swiper-slide">
+                                            <img src="images/massage-slide-1.jpg" alt="">
+                                        </div>
+                                        <div class="modal__swiper-slide swiper-slide">
+                                            <img src="images/massage-slide-2.jpg" alt="">
+                                        </div>
+                                        <div class="modal__swiper-slide swiper-slide">
+                                            <img src="images/massage-slide-3.jpg" alt="">
+                                        </div>
+                                        <div class="modal__swiper-slide swiper-slide">
+                                            <img src="images/massage-slide-4.jpg" alt="">
+                                        </div>
+                                        <div class="modal__swiper-slide swiper-slide">
+                                            <img src="images/massage-slide-5.jpg" alt="">
+                                        </div>
+                                        <div class="modal__swiper-slide swiper-slide">
+                                            <img src="images/massage-slide-6.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="modal__swiper-btns">
+                                        <div class="modal__btns-wrap">
+                                            <div class="modal__btns-inner">
+                                                <button class="modal__btn-prev swiper-button-prev">
+                                                    <svg width="12" height="22" viewBox="0 0 12 22" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M2.72508 10.8541L11.7578 1.82133C12.0701 1.50901 12.0701 1.00266 11.7578 0.690345C11.4455 0.378121 10.9392 0.378121 10.6269 0.690345L1.0286 10.2886C0.716377 10.6009 0.716377 11.1073 1.0286 11.4196L10.6269 21.0178C10.9446 21.3247 11.451 21.3159 11.7578 20.9982C12.0572 20.6882 12.0572 20.1968 11.7578 19.8869L2.72508 10.8541Z"
+                                                            fill="white" />
+                                                    </svg>
+                                                </button>
+                                                <div class="modal__swiper-pagination swiper-pagination"></div>
+                                                <button class="modal__btn-next swiper-button-next">
+                                                    <svg width="12" height="22" viewBox="0 0 12 22" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M9.96291 10.8541L0.930143 1.82133C0.617872 1.50901 0.617872 1.00266 0.930143 0.690345C1.24251 0.378121 1.74881 0.378121 2.06113 0.690345L11.6594 10.2886C11.9716 10.6009 11.9716 11.1073 11.6594 11.4196L2.06113 21.0178C1.74337 21.3247 1.23703 21.3159 0.930143 20.9982C0.630807 20.6882 0.630807 20.1968 0.930143 19.8869L9.96291 10.8541Z"
+                                                            fill="white" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="modal__container">
+                                    <div class="modal__title-text">
+                                        Как проходит процедура антицеллюлитный массаж?
+                                    </div>
+                                    <p class="modal-text modal-text--margin">
+                                        Мастер проводит пальцами по всем участкам проблемных зон. Эти движения подготавливают кожу к более интенсивным действиям в начале и завершают сеанс в конце.Во время их выполнения пальцы массажиста слегка расставлены, движения более интенсивные и проникающие,
+                                        проходят в направлении к более глубоким тканям.
+                                    </p>
+
+                                    <div class="modal__title-text">
+                                        Как действует антицеллюлитный массаж?
+                                    </div>
+                                    <p class="modal-text modal-text--margin">
+                                        Благодаря массажу можно воздействовать разными методами: улучшить кровообращение, смягчить жировые ткани. Массаж проводиться по линии «течения» лимфы, что помогает разбить жиры и вывести из организма жидкость, которая накопилась в теле. В итоге тело избавляется
+                                        от солей, токсинов, которые появляются между тканями. В итоге проявления апельсиновой корки уменьшаются.
+                                    </p>
+
+                                    <div class="modal-btn__wrap">
+                                        <button class="correction__btn btn" data-fancybox data-src="#modal-record">
+                                            Записаться
+                                        </button>
+                                        <button data-fancybox-close class="btn-close">
+                                            Закрыть
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </article>
+
+                    <article class="correction__item varieties">
+                        <div class="correction__img varieties-img">
+                            <img src="images/stoun-massage.jpg" alt="">
+                        </div>
+
+
+                        <div class="correction-wrap__content varieties-wrap__content">
+                            <div class="correction__content">
+                                <div class="correction__content-inner">
+                                    <h3 class="correction__content-title title-three">
+                                        Стоун-массаж
+                                    </h3>
+                                    <p class="correction__text">
+                                        С помощью массажа из клеток кожи выводится лишняя жидкость. Спадает отек, кожа подтягивается, контуры тела становятся более гладкими и четкими, а общие объемы тела уменьшаются. Наличие целлюлита отравляет жизнь многим девушкам, мешая носить открытую или
+                                        облегающую одежду, чувствовать себя уверенно на пляже в бикини. Питание и спорт помогают похудеть, но от "апельсиновой корки" избавиться не так просто. Самое лучшее и эффективное средство – антицеллюлитный массаж.
+                                    </p>
+
+                                    <ul class="correction__time time">
+                                        <li class="time__item correction__time-item time-item--dec">
+                                            <div class="time__title correction__time-title">45 мин</div>
+                                            <span class="time__text correction__time-text">Продолжительность</span>
+                                        </li>
+                                        <li class="time__item correction__time-item">
+                                            <div class="time__title correction__time-title">Антицеллюлитное обертывание
+                                            </div>
+                                            <span class="time__text correction__time-text">Дополнительно можно
+                                                заказать</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="correction__price price">
+                                        <li class="price__item correction__price-item">
+                                            <span class="price__title correction__price-title"> Цена</span>
+                                            <span class="price__text correction__price-num">900 руб.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="correction__btns varieties-btns">
+                                <button class="correction__btn btn" data-fancybox data-src="#modal-record">
+                                    Записаться
+                                </button>
+                                <button id="more-7" data-fancybox data-src=".modal-2" class="varieties-detailed btn-link">Подробнее</button>
+                            </div>
+                        </div>
+
+
+                        <div class="modal-2 modal correction__modal" style="display: none;">
+                            <div class="modal-body">
+                                <div class="modal__container">
+                                    <div class="modal-top__wrap">
+                                        <h3 class="modal__title title-three">Стоун-массаж</h3>
+                                        <button data-fancybox-close class="modal-close">
+                                            <svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M27.2728 0H2.7273C1.22382 0 0 1.22312 0 2.7273V27.2728C0 28.7769 1.22382 30.0001 2.7273 30.0001H27.2728C28.7762 30.0001 30.0001 28.7769 30.0001 27.2728V2.7273C30 1.22312 28.7762 0 27.2728 0ZM28.6364 27.2728C28.6364 28.0245 28.0251 28.6364 27.2728 28.6364H2.7273C1.97489 28.6364 1.36368 28.0245 1.36368 27.2728V2.7273C1.36368 1.97559 1.97495 1.36368 2.7273 1.36368H27.2728C28.0252 1.36368 28.6364 1.97559 28.6364 2.7273V27.2728Z"
+                                                    fill="white" />
+                                                <path
+                                                    d="M21.6187 8.38153C21.3523 8.11517 20.9209 8.11517 20.6546 8.38153L15.0003 14.0358L9.34601 8.38153C9.07965 8.11517 8.64819 8.11517 8.3819 8.38153C8.11554 8.64789 8.11554 9.07935 8.3819 9.34564L14.0362 14.9999L8.3819 20.6542C8.11554 20.9206 8.11554 21.352 8.3819 21.6183C8.51504 21.7515 8.68955 21.8181 8.86398 21.8181C9.03842 21.8181 9.21286 21.7515 9.34607 21.6183L15.0004 15.964L20.6546 21.6183C20.7878 21.7515 20.9623 21.8181 21.1367 21.8181C21.3112 21.8181 21.4856 21.7515 21.6188 21.6183C21.8852 21.352 21.8852 20.9205 21.6188 20.6542L15.9645 14.9999L21.6188 9.34564C21.885 9.07935 21.885 8.64789 21.6187 8.38153Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <p class="modal-text">
+                                        Антицеллюлитный массаж представляет собой комплекс процедур, направленных на активизацию обмена веществ в подкожной жировой прослойке.
+                                    </p>
+                                    <p class="modal-text">
+                                        Антицеллюлитный массаж выполняют в соответствии с разработанными технологиями. До начала процедуры кожу следует распарить и очистить. В процессе массажа важно правильно выполнять движения. Воздействие по часовой стрелке допускается с нажимом. В обратном
+                                        направлении возможны только легкие поглаживания.
+                                    </p>
+                                    <article class="modal__block">
+                                        <div class="modal__block-content">
+                                            <div class="modal-content__block modal-programms">
+                                                <h5 class="modal-programms__title">
+                                                    Программа
+                                                </h5>
+                                                <ul class="modal-programms__list">
+                                                    <li class="modal-programms__item"> Антицеллюлитный или лимфодренажный массаж
+                                                    </li>
+                                                    <li class="modal-programms__item">Скрабирование</li>
+                                                    <li class="modal-programms__item">Фитобочка</li>
+                                                    <li class="modal-programms__item">Виски-пеленание</li>
+                                                    <li class="modal-programms__item">Чайная церемония</li>
+                                                </ul>
+                                            </div>
+                                            <ul class="modal-content__block correction__time time">
+                                                <li class="time__item correction__time-item time-item--dec">
+                                                    <div class="time__title correction__time-title">2 часа 45 мин</div>
+                                                    <span class="time__text correction__time-text">Продолжительность</span>
+                                                </li>
+                                                <li class="time__item correction__time-item">
+                                                    <div class="time__title correction__time-title">Массаж лица</div>
+                                                    <span class="time__text correction__time-text">Дополнительно можно
+                                                        заказать</span>
+                                                </li>
+                                            </ul>
+                                            <ul class="modal-content__block correction__price price">
+                                                <li class="price__item correction__price-item">
+                                                    <span class="price__title correction__price-title">Всего тела</span>
+                                                    <span class="price__text correction__price-num">3 800 руб.</span>
+                                                </li>
+                                                <li class="price__item correction__price-item">
+                                                    <span class="price__title correction__price-title">Только ног
+                                                    </span>
+                                                    <span class="price__text correction__price-num">2 700 руб.</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="modal__block-img">
+                                            <img src="images/massage2.jpg" alt="">
+                                        </div>
+                                    </article>
+                                </div>
+                                <h3 class="modal__swiper-title title-three">
+                                    Галерея
+                                </h3>
+                                <div id="modal__swiper-2" class="modal__swiper-container swiper-container">
+                                    <div class="modal__swiper-wrapper swiper-wrapper">
+                                        <div class="modal__swiper-slide swiper-slide">
+                                            <img src="images/massage-modal2-slide1.jpg" alt="">
+                                        </div>
+                                        <div class="modal__swiper-slide swiper-slide">
+                                            <img src="images/massage-modal2-slide2.jpg" alt="">
+                                        </div>
+                                        <div class="modal__swiper-slide swiper-slide">
+                                            <img src="images/massage-modal2-slide3.jpg" alt="">
+                                        </div>
+
+
+                                    </div>
+                                    <div class="modal__swiper-btns">
+                                        <div class="modal__btns-wrap">
+                                            <div class="modal__btns-inner">
+                                                <button class="modal__btn-prev swiper-button-prev">
+                                                    <svg width="12" height="22" viewBox="0 0 12 22" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M2.72508 10.8541L11.7578 1.82133C12.0701 1.50901 12.0701 1.00266 11.7578 0.690345C11.4455 0.378121 10.9392 0.378121 10.6269 0.690345L1.0286 10.2886C0.716377 10.6009 0.716377 11.1073 1.0286 11.4196L10.6269 21.0178C10.9446 21.3247 11.451 21.3159 11.7578 20.9982C12.0572 20.6882 12.0572 20.1968 11.7578 19.8869L2.72508 10.8541Z"
+                                                            fill="white" />
+                                                    </svg>
+                                                </button>
+                                                <div class="modal__swiper-pagination swiper-pagination"></div>
+                                                <button class="modal__btn-next swiper-button-next">
+                                                    <svg width="12" height="22" viewBox="0 0 12 22" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M9.96291 10.8541L0.930143 1.82133C0.617872 1.50901 0.617872 1.00266 0.930143 0.690345C1.24251 0.378121 1.74881 0.378121 2.06113 0.690345L11.6594 10.2886C11.9716 10.6009 11.9716 11.1073 11.6594 11.4196L2.06113 21.0178C1.74337 21.3247 1.23703 21.3159 0.930143 20.9982C0.630807 20.6882 0.630807 20.1968 0.930143 19.8869L9.96291 10.8541Z"
+                                                            fill="white" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="modal__container">
+                                    <div class="modal__title-text">
+                                        Как проходит процедура стоун-массаж?
+                                    </div>
+                                    <p class="modal-text modal-text--margin">
+                                        Горячие камни кладутся на определенные участки тела. Отдавая свое тепло, они способствуют расслаблению и прогреванию напряженных групп мышц, делая процедуру не только приятной, но и лечебной.
+                                    </p>
+
+                                    <div class="modal__title-text">
+                                        Как действует стоун-массаж?
+                                    </div>
+                                    <p class="modal-text modal-text--margin">
+                                        Качество стоун-массажа напрямую зависит от вида выбранных камней. Существуют определенные температурные показатели, которых необходимо придерживаться при выполнении данной процедуры. У каждого массажного камня существует определенное место размещения
+                                        на теле пациента. Кроме локального размещения, камнями выполняются массажные элементы скольжения.
+                                    </p>
+
+                                    <div class="modal-btn__wrap">
+                                        <button class="correction__btn btn" data-fancybox data-src="#modal-record">
+                                            Записаться
+                                        </button>
+                                        <button data-fancybox-close class="btn-close">
+                                            Закрыть
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </article>
+
+                    <article class="correction__item varieties">
+                        <div class="correction-wrap__content varieties-wrap__content">
+                            <div class="correction__content">
+                                <div class="correction__content-inner">
+                                    <h3 class="correction__content-title title-three">
+                                        Антицеллюлитное Styx обертывание
+                                    </h3>
+                                    <p class="correction__text">
+                                        Кто не мечтает избавиться от «апельсиновой корки»? Целлюлит мешает дамам чувствовать себя свободно и уверенно, не дает надевать ту одежду, которую хочется, заставляет испытывать стеснение и смущение на пляже. В итоге, жизнь превращается в стресс, а это
+                                        уже ведет к более серьезным проблемам со здоровьем. Обертывание Стикс призвано помочь в решении этой деликатной проблемы.
+                                    </p>
+                                    <ul class="correction__time time">
+                                        <li class="time__item correction__time-item time-item--dec">
+                                            <div class="time__title correction__time-title">1 час</div>
+                                            <span class="time__text correction__time-text">Продолжительность</span>
+                                        </li>
+                                        <li class="time__item correction__time-item">
+                                            <div class="time__title correction__time-title">Прогревание в фитобочке
+                                            </div>
+                                            <span class="time__text correction__time-text">Дополнительно можно
+                                                заказать</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="correction__price price">
+
+                                        <li class="price__item correction__price-item">
+                                            <span class="price__title correction__price-title"> Цена</span>
+                                            <span class="price__text correction__price-num">600 руб.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="correction__btns varieties-btns">
+                                <button class="correction__btn btn" data-fancybox data-src="#modal-record">
+                                    Записаться
+                                </button>
+                                <button id="more-8" data-fancybox data-src=".modal-3" class="varieties-detailed btn-link">Подробнее</button>
+                            </div>
+                        </div>
+
+                        <div class="correction__img varieties-img">
+                            <img src="images/correct-8.jpg" alt="">
+                        </div>
+                        <div class="modal-3 modal correction__modal" style="display: none;">
+                            <div class="modal-body">
+                                <div class="modal__container">
+                                    <div class="modal-top__wrap">
+                                        <h3 class="modal__title title-three"> Антицеллюлитное Styx обертывание</h3>
+                                        <button data-fancybox-close class="modal-close">
+                                            <svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M27.2728 0H2.7273C1.22382 0 0 1.22312 0 2.7273V27.2728C0 28.7769 1.22382 30.0001 2.7273 30.0001H27.2728C28.7762 30.0001 30.0001 28.7769 30.0001 27.2728V2.7273C30 1.22312 28.7762 0 27.2728 0ZM28.6364 27.2728C28.6364 28.0245 28.0251 28.6364 27.2728 28.6364H2.7273C1.97489 28.6364 1.36368 28.0245 1.36368 27.2728V2.7273C1.36368 1.97559 1.97495 1.36368 2.7273 1.36368H27.2728C28.0252 1.36368 28.6364 1.97559 28.6364 2.7273V27.2728Z"
+                                                    fill="white" />
+                                                <path
+                                                    d="M21.6187 8.38153C21.3523 8.11517 20.9209 8.11517 20.6546 8.38153L15.0003 14.0358L9.34601 8.38153C9.07965 8.11517 8.64819 8.11517 8.3819 8.38153C8.11554 8.64789 8.11554 9.07935 8.3819 9.34564L14.0362 14.9999L8.3819 20.6542C8.11554 20.9206 8.11554 21.352 8.3819 21.6183C8.51504 21.7515 8.68955 21.8181 8.86398 21.8181C9.03842 21.8181 9.21286 21.7515 9.34607 21.6183L15.0004 15.964L20.6546 21.6183C20.7878 21.7515 20.9623 21.8181 21.1367 21.8181C21.3112 21.8181 21.4856 21.7515 21.6188 21.6183C21.8852 21.352 21.8852 20.9205 21.6188 20.6542L15.9645 14.9999L21.6188 9.34564C21.885 9.07935 21.885 8.64789 21.6187 8.38153Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <p class="modal-text">
+                                        Косметика Styx от целлюлита помогает значительно улучшить состояние кожи, не только сделает ее бархатной и гладкой, но и выровнять рельеф и предотвратить дальнейшее появление «апельсиновой корки». При целлюлите в состав косметики Styx включаются особые
+                                        компоненты, которые отвечают за повышение эластичности и тонусы кожи
+                                    </p>
+                                    <article class="modal__block">
+                                        <div class="modal__block-content">
+                                            <div class="modal-content__block modal-programms">
+                                                <h5 class="modal-programms__title">
+                                                    Программа
+                                                </h5>
+                                                <ul class="modal-programms__list">
+                                                    <li class="modal-programms__item"> Антицеллюлитный или лимфодренажный массаж
+                                                    </li>
+                                                    <li class="modal-programms__item">Скрабирование</li>
+                                                    <li class="modal-programms__item">Фитобочка</li>
+                                                    <li class="modal-programms__item">Виски-пеленание</li>
+                                                    <li class="modal-programms__item">Чайная церемония</li>
+                                                </ul>
+                                            </div>
+                                            <ul class="modal-content__block correction__time time">
+                                                <li class="time__item correction__time-item time-item--dec">
+                                                    <div class="time__title correction__time-title">2 часа 45 мин</div>
+                                                    <span class="time__text correction__time-text">Продолжительность</span>
+                                                </li>
+                                                <li class="time__item correction__time-item">
+                                                    <div class="time__title correction__time-title">Массаж лица</div>
+                                                    <span class="time__text correction__time-text">Дополнительно можно
+                                                        заказать</span>
+                                                </li>
+                                            </ul>
+                                            <ul class="modal-content__block correction__price price">
+                                                <li class="price__item correction__price-item">
+                                                    <span class="price__title correction__price-title">Всего тела</span>
+                                                    <span class="price__text correction__price-num">3 800 руб.</span>
+                                                </li>
+                                                <li class="price__item correction__price-item">
+                                                    <span class="price__title correction__price-title">Только ног
+                                                    </span>
+                                                    <span class="price__text correction__price-num">2 700 руб.</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="modal__block-img">
+                                            <img src="images/modal-img.jpg" alt="">
+                                        </div>
+                                    </article>
+                                </div>
+                                <h3 class="modal__swiper-title title-three">
+                                    Галерея
+                                </h3>
+                                <div id="modal__swiper-2" class="modal__swiper-container swiper-container">
+                                    <div class="modal__swiper-wrapper swiper-wrapper">
+                                        <div class="modal__swiper-slide swiper-slide">
+                                            <img src="images/massage-modal3-slide1.jpg" alt="">
+                                        </div>
+                                        <div class="modal__swiper-slide swiper-slide">
+                                            <img src="images/massage-modal3-slide2.jpg" alt="">
+                                        </div>
+                                        <div class="modal__swiper-slide swiper-slide">
+                                            <img src="images/massage-modal3-slide3.jpg" alt="">
+                                        </div>
+                                        <div class="modal__swiper-slide swiper-slide">
+                                            <img src="images/massage-modal3-slide4.jpg" alt="">
+                                        </div>
+                                        <div class="modal__swiper-slide swiper-slide">
+                                            <img src="images/massage-modal3-slide5.jpg" alt="">
+                                        </div>
+                                        <div class="modal__swiper-slide swiper-slide">
+                                            <img src="images/modal-slide-3.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="modal__swiper-btns">
+                                        <div class="modal__btns-wrap">
+                                            <div class="modal__btns-inner">
+                                                <button class="modal__btn-prev swiper-button-prev">
+                                                    <svg width="12" height="22" viewBox="0 0 12 22" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M2.72508 10.8541L11.7578 1.82133C12.0701 1.50901 12.0701 1.00266 11.7578 0.690345C11.4455 0.378121 10.9392 0.378121 10.6269 0.690345L1.0286 10.2886C0.716377 10.6009 0.716377 11.1073 1.0286 11.4196L10.6269 21.0178C10.9446 21.3247 11.451 21.3159 11.7578 20.9982C12.0572 20.6882 12.0572 20.1968 11.7578 19.8869L2.72508 10.8541Z"
+                                                            fill="white" />
+                                                    </svg>
+                                                </button>
+                                                <div class="modal__swiper-pagination swiper-pagination"></div>
+                                                <button class="modal__btn-next swiper-button-next">
+                                                    <svg width="12" height="22" viewBox="0 0 12 22" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M9.96291 10.8541L0.930143 1.82133C0.617872 1.50901 0.617872 1.00266 0.930143 0.690345C1.24251 0.378121 1.74881 0.378121 2.06113 0.690345L11.6594 10.2886C11.9716 10.6009 11.9716 11.1073 11.6594 11.4196L2.06113 21.0178C1.74337 21.3247 1.23703 21.3159 0.930143 20.9982C0.630807 20.6882 0.630807 20.1968 0.930143 19.8869L9.96291 10.8541Z"
+                                                            fill="white" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="modal__container">
+                                    <div class="modal__title-text">
+                                        Как проходит процедура антицеллюлитное Styx обертывание?
+                                    </div>
+                                    <p class="modal-text modal-text--margin">
+                                        Суть антицеллюлитного обертывания Styx заключается в волнообразном повышении температуры тела и стимуляции процесса метаболизма на клеточном уровне. Процедура позволяет естественным путем удалять токсические вещества и бороться с застойными процессами
+                                        в конечностях.
+                                    </p>
+
+                                    <div class="modal__title-text">
+                                        Как действует Styx обертывание?
+                                    </div>
+                                    <p class="modal-text modal-text--margin">
+                                        Обертывание для похудения styx базируется на трех главных принципах водолечения: «растворении, удалении и укреплении». Во время горячего обертывания стикс поверхностная температура тела изменяется на 1–2 градуса, тем самым провоцируя организм к восстановлению
+                                        термобаланса посредством усиленного сжигания жира и повышая обмен веществ на 35–50%. А биоактивные компоненты лосьонов приводят мембранные комплексы клеток в возбужденное биоэлектрическое состояние, расщепляют жир,
+                                        выводят продукты распада и токсические вещества.
+                                    </p>
+
+                                    <div class="modal-btn__wrap">
+                                        <button class="correction__btn btn" data-fancybox data-src="#modal-record">
+                                            Записаться
+                                        </button>
+                                        <button data-fancybox-close class="btn-close">
+                                            Закрыть
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </article>
+
+                    <article class="correction__item varieties">
+                        <div class="correction__img varieties-img">
+                            <img src="images/massage-other.jpg" alt="">
+                        </div>
+
+                        <div class="correction-wrap__content varieties-wrap__content">
+                            <div class="correction__content">
+                                <div class="correction__content-inner">
+                                    <h3 class="correction__content-title title-three">
+                                        Антицеллюлитный массаж всего тела
+                                    </h3>
+                                    <p class="correction__text">
+                                        Массаж против целлюлита направлен на выведение излишков жидкости из клеток. В результате уменьшаются объемы тела, улучшается состояние кожи, расслабляются мышцы и получаются гладкие и ровные контуры фигуры. Целлюлит – неприятный косметический дефект кожи
+                                        тела. "Апельсиновая корка" может портить впечатление даже от стройной и спортивной фигуры. К счастью, сейчас есть приятное, эффективное и доступное по цене средство – антицеллюлитный массаж.
+                                    </p>
+
+                                    <ul class="correction__time time">
+                                        <li class="time__item correction__time-item time-item--dec">
+                                            <div class="time__title correction__time-title">1 час 15 мин</div>
+                                            <span class="time__text correction__time-text">Продолжительность</span>
+                                        </li>
+                                        <li class="time__item correction__time-item">
+                                            <div class="time__title correction__time-title">Антицеллюлитное обертование
+                                            </div>
+                                            <span class="time__text correction__time-text">Дополнительно можно
+                                                заказать</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="correction__price price">
+
+                                        <li class="price__item correction__price-item">
+                                            <span class="price__title correction__price-title"> Цена</span>
+                                            <span class="price__text correction__price-num">1 200 руб.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="correction__btns varieties-btns">
+                                <button class="correction__btn btn" data-fancybox data-src="#modal-record">
+                                    Записаться
+                                </button>
+                                <button id="more-9" data-fancybox data-src=".modal-4" class="varieties-detailed btn-link">Подробнее</button>
+                            </div>
+                        </div>
+
+                        <div class="modal-4 modal correction__modal" style="display: none;">
+                            <div class="modal-body">
+                                <div class="modal__container">
+                                    <div class="modal-top__wrap">
+                                        <h3 class="modal__title title-three"> Антицеллюлитный массаж всего тела</h3>
+                                        <button data-fancybox-close class="modal-close">
+                                            <svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M27.2728 0H2.7273C1.22382 0 0 1.22312 0 2.7273V27.2728C0 28.7769 1.22382 30.0001 2.7273 30.0001H27.2728C28.7762 30.0001 30.0001 28.7769 30.0001 27.2728V2.7273C30 1.22312 28.7762 0 27.2728 0ZM28.6364 27.2728C28.6364 28.0245 28.0251 28.6364 27.2728 28.6364H2.7273C1.97489 28.6364 1.36368 28.0245 1.36368 27.2728V2.7273C1.36368 1.97559 1.97495 1.36368 2.7273 1.36368H27.2728C28.0252 1.36368 28.6364 1.97559 28.6364 2.7273V27.2728Z"
+                                                    fill="white" />
+                                                <path
+                                                    d="M21.6187 8.38153C21.3523 8.11517 20.9209 8.11517 20.6546 8.38153L15.0003 14.0358L9.34601 8.38153C9.07965 8.11517 8.64819 8.11517 8.3819 8.38153C8.11554 8.64789 8.11554 9.07935 8.3819 9.34564L14.0362 14.9999L8.3819 20.6542C8.11554 20.9206 8.11554 21.352 8.3819 21.6183C8.51504 21.7515 8.68955 21.8181 8.86398 21.8181C9.03842 21.8181 9.21286 21.7515 9.34607 21.6183L15.0004 15.964L20.6546 21.6183C20.7878 21.7515 20.9623 21.8181 21.1367 21.8181C21.3112 21.8181 21.4856 21.7515 21.6188 21.6183C21.8852 21.352 21.8852 20.9205 21.6188 20.6542L15.9645 14.9999L21.6188 9.34564C21.885 9.07935 21.885 8.64789 21.6187 8.38153Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <p class="modal-text">
+                                        Массаж от целлюлита основан на воздействии на жировые клетки – адипоциты и гипоциты, которые накапливают и удерживают жировые отложения. Под давлением механической деформации кожи при массаже, эти клетки теряют целостность своей оболочки и больше не в
+                                        состоянии удерживать жир. Он становится менее твердым и вымывается из жировой ткани вместе с лимфой.
+                                    </p>
+                                    <p class="modal-text">
+                                        Антицеллюлитный массаж позволяет воздействовать на «апельсиновую корку» локально – точечно, при этом происходит местный разогрев кожи. Температура ткани увеличивается на 1,5 – 2ºС, что способствует лучшему кровоснабжению и лимфотоку, тем самым повышая
+                                        эффективность процедуры.
+                                    </p>
+                                    <article class="modal__block">
+                                        <div class="modal__block-content">
+                                            <div class="modal-content__block modal-programms">
+                                                <h5 class="modal-programms__title">
+                                                    Программа
+                                                </h5>
+                                                <ul class="modal-programms__list">
+                                                    <li class="modal-programms__item"> Антицеллюлитный или лимфодренажный массаж
+                                                    </li>
+                                                    <li class="modal-programms__item">Скрабирование</li>
+                                                    <li class="modal-programms__item">Фитобочка</li>
+                                                    <li class="modal-programms__item">Виски-пеленание</li>
+                                                    <li class="modal-programms__item">Чайная церемония</li>
+                                                </ul>
+                                            </div>
+                                            <ul class="modal-content__block correction__time time">
+                                                <li class="time__item correction__time-item time-item--dec">
+                                                    <div class="time__title correction__time-title">2 часа 45 мин</div>
+                                                    <span class="time__text correction__time-text">Продолжительность</span>
+                                                </li>
+                                                <li class="time__item correction__time-item">
+                                                    <div class="time__title correction__time-title">Массаж лица</div>
+                                                    <span class="time__text correction__time-text">Дополнительно можно
+                                                        заказать</span>
+                                                </li>
+                                            </ul>
+                                            <ul class="modal-content__block correction__price price">
+                                                <li class="price__item correction__price-item">
+                                                    <span class="price__title correction__price-title">Всего тела</span>
+                                                    <span class="price__text correction__price-num">3 800 руб.</span>
+                                                </li>
+                                                <li class="price__item correction__price-item">
+                                                    <span class="price__title correction__price-title">Только ног
+                                                    </span>
+                                                    <span class="price__text correction__price-num">2 700 руб.</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="modal__block-img">
+                                            <img src="images/massage4.jpg" alt="">
+                                        </div>
+                                    </article>
+                                </div>
+                                <h3 class="modal__swiper-title title-three">
+                                    До и после
+                                </h3>
+                                <div id="modal__swiper-2" class="modal__swiper-container swiper-container">
+                                    <div class="modal__swiper-wrapper swiper-wrapper">
+                                        <div class="modal__swiper-slide swiper-slide">
+                                            <img src="images/modal-slide.jpg" alt="">
+                                        </div>
+                                        <div class="modal__swiper-slide swiper-slide">
+                                            <img src="images/modal-slide-2.jpg" alt="">
+                                        </div>
+                                        <div class="modal__swiper-slide swiper-slide">
+                                            <img src="images/modal-slide-3.jpg" alt="">
+                                        </div>
+                                        <div class="modal__swiper-slide swiper-slide">
+                                            <img src="images/modal-slide.jpg" alt="">
+                                        </div>
+                                        <div class="modal__swiper-slide swiper-slide">
+                                            <img src="images/modal-slide-2.jpg" alt="">
+                                        </div>
+                                        <div class="modal__swiper-slide swiper-slide">
+                                            <img src="images/modal-slide-3.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="modal__swiper-btns">
+                                        <div class="modal__btns-wrap">
+                                            <div class="modal__btns-inner">
+                                                <button class="modal__btn-prev swiper-button-prev">
+                                                    <svg width="12" height="22" viewBox="0 0 12 22" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M2.72508 10.8541L11.7578 1.82133C12.0701 1.50901 12.0701 1.00266 11.7578 0.690345C11.4455 0.378121 10.9392 0.378121 10.6269 0.690345L1.0286 10.2886C0.716377 10.6009 0.716377 11.1073 1.0286 11.4196L10.6269 21.0178C10.9446 21.3247 11.451 21.3159 11.7578 20.9982C12.0572 20.6882 12.0572 20.1968 11.7578 19.8869L2.72508 10.8541Z"
+                                                            fill="white" />
+                                                    </svg>
+                                                </button>
+                                                <div class="modal__swiper-pagination swiper-pagination"></div>
+                                                <button class="modal__btn-next swiper-button-next">
+                                                    <svg width="12" height="22" viewBox="0 0 12 22" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M9.96291 10.8541L0.930143 1.82133C0.617872 1.50901 0.617872 1.00266 0.930143 0.690345C1.24251 0.378121 1.74881 0.378121 2.06113 0.690345L11.6594 10.2886C11.9716 10.6009 11.9716 11.1073 11.6594 11.4196L2.06113 21.0178C1.74337 21.3247 1.23703 21.3159 0.930143 20.9982C0.630807 20.6882 0.630807 20.1968 0.930143 19.8869L9.96291 10.8541Z"
+                                                            fill="white" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="modal__container">
+                                    <div class="modal__title-text">
+                                        Как проходит процедура антицеллюлитный массаж всего тела?
+                                    </div>
+                                    <p class="modal-text modal-text--margin">
+                                        Данная методика представляет собой механическое воздействие на кожу, включающее рефлекторные движения в области локализации целлюлита.
+                                    </p>
+
+                                    <div class="modal__title-text">
+                                        Как действует антицеллюлитный массаж всего тела?
+                                    </div>
+                                    <p class="modal-text modal-text--margin">
+                                        Антицеллюлитный массаж - это процедура, проводимая с целью нормализации обмена веществ в подкожно-жировом слое.
+                                    </p>
+
+                                    <div class="modal-btn__wrap">
+                                        <button class="correction__btn btn" data-fancybox data-src="#modal-record">
+                                            Записаться
+                                        </button>
+                                        <button data-fancybox-close class="btn-close">
+                                            Закрыть
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </article>
+                </div>
+            </section>
+
+            <section class="spoiler spoiler-information">
+                <div class="container">
+                    <div class="spoiler-block spoiler-block--mr">
+                        <div class="spoiler-block__inner">
+                            <h2 class="spoiler-title">
+                                Какой результат Вы получите?
+                            </h2>
+                            <button class="spoiler-open__wrap">
+                                <svg class="spoiler-open" width="30" height="30" viewBox="0 0 34 34" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M17 1.4003C16.3722 1.4003 15.8637 1.90879 15.8638 2.53652V15.8638L2.53652 15.8638C1.90871 15.8638 1.40022 16.3723 1.4003 17C1.4003 17.6278 1.90878 18.1363 2.53652 18.1362L15.8638 18.1362L15.8638 31.4635C15.8638 32.0913 16.3723 32.5998 17 32.5997C17.3138 32.5997 17.598 32.4725 17.8036 32.267C18.0091 32.0614 18.1362 31.7773 18.1363 31.4634L18.1363 18.1361H31.4636C31.7774 18.1361 32.0615 18.009 32.2671 17.8034C32.4727 17.5978 32.5998 17.3138 32.5998 16.9998C32.5998 16.372 32.0914 15.8636 31.4636 15.8636L18.1364 15.8636L18.1364 2.53637C18.1363 1.90879 17.6278 1.4003 17 1.4003Z"
+                                        fill="white" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="spoiler-content">
+                            <p class="spoiler-content__text spoiler-content__text--mr">
+                                Антицеллюлитный массаж центр BamBoo предлагает по разной стоимости, которая зависит в первую очередь от длительности процедуры. Также сумма складывается от количества прорабатываемых зон. Вы можете заказать проработку всего тела или отдельных участков
+                                – верхней части тела или нижней. Можно заказать услугу по времени. Получасовой сеанс самый недорогой. Но такого количества времени хватит на массирование только одной зоны – самой проблемной. Полноценная работа над всем
+                                телом займет полтора-два часа. Что касается процедур, их количество зависит от стадии целлюлита, которую определит наш профессиональный опытный массажист. Первая стадии заболевания предполагает 10-15 процедур.
+                            </p>
+                            <p class="spoiler-content__text">
+                                Наш Спа-центр красоты предлагает записаться на курс антицеллюлитного массажа. У нас конкурентные и доступные расценки на услуги. Они радуют каждого клиента. А обслуживание нравится даже избирательным посетителям. Наш Спа-салон приглашает Вас на процедуры
+                                красоты. Заказать абонемент (можно для себя или в качестве подарка) можно онлайн или по телефону, указанному на сайте <a class="spoiler__tel" href="tel:7343 3282297">+7 (343)
+                                    328-22-97</a> .
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="spoiler-block">
+                        <div class="spoiler-block__inner spoiler-block__inner--active">
+                            <h2 class="spoiler-title">
+                                Какой результат Вы получите?
+                            </h2>
+                            <button class="spoiler-open__wrap">
+                                <svg class="spoiler-open" width="30" height="30" viewBox="0 0 34 34" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M17 1.4003C16.3722 1.4003 15.8637 1.90879 15.8638 2.53652V15.8638L2.53652 15.8638C1.90871 15.8638 1.40022 16.3723 1.4003 17C1.4003 17.6278 1.90878 18.1363 2.53652 18.1362L15.8638 18.1362L15.8638 31.4635C15.8638 32.0913 16.3723 32.5998 17 32.5997C17.3138 32.5997 17.598 32.4725 17.8036 32.267C18.0091 32.0614 18.1362 31.7773 18.1363 31.4634L18.1363 18.1361H31.4636C31.7774 18.1361 32.0615 18.009 32.2671 17.8034C32.4727 17.5978 32.5998 17.3138 32.5998 16.9998C32.5998 16.372 32.0914 15.8636 31.4636 15.8636L18.1364 15.8636L18.1364 2.53637C18.1363 1.90879 17.6278 1.4003 17 1.4003Z"
+                                        fill="white" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="spoiler-content spoiler-content--active" style="height: 100%;">
+                            <p class="spoiler-content__text spoiler-content__text--mr">
+                                Антицеллюлитный массаж центр BamBoo предлагает по разной стоимости, которая зависит в первую очередь от длительности процедуры. Также сумма складывается от количества прорабатываемых зон. Вы можете заказать проработку всего тела или отдельных участков
+                                – верхней части тела или нижней. Можно заказать услугу по времени. Получасовой сеанс самый недорогой. Но такого количества времени хватит на массирование только одной зоны – самой проблемной. Полноценная работа над всем
+                                телом займет полтора-два часа. Что касается процедур, их количество зависит от стадии целлюлита, которую определит наш профессиональный опытный массажист. Первая стадии заболевания предполагает 10-15 процедур.
+                            </p>
+                            <p class="spoiler-content__text">
+                                Наш Спа-центр красоты предлагает записаться на курс антицеллюлитного массажа. У нас конкурентные и доступные расценки на услуги. Они радуют каждого клиента. А обслуживание нравится даже избирательным посетителям. Наш Спа-салон приглашает Вас на процедуры
+                                красоты. Заказать абонемент (можно для себя или в качестве подарка) можно онлайн или по телефону, указанному на сайте <a class="spoiler__tel" href="tel:7343 3282297">+7 (343)
+                                    328-22-97</a>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </div>
+    <div id="modal-record" class="modal-record modal">
+        <div class="modal__record-body modal-body">
+            <div class="modal__container">
+
+                <div class="questionnaire-wrapper">
+                   
+                    <article class="questionnaire-item">
+                        <h2 class="subscription__item-title questionnaire-title">
+                            Оформить обратный звонок
+                        </h2>
+
+                        <form class="form form-1" action="/">
+                            
+                            <div class="questionnaire-block subscription-block">
+                                <label class="questionnaire-el subscription-el__fullname">
+                                    <div class="subscription__el-title form__title"> ФИО</div>
+                                    <input type="text" name="fullname" data-validate-field="fullname"
+                                        class="inp-text subscription__field subscription__fullname form__field"
+                                        placeholder="Мурсалов Мурсал">
+                                </label>
+                                <label class="questionnaire-el subscription__el-phone">
+                                    <div class="subscription__title-two form__title">
+                                        Телефон
+                                    </div>
+                                    <input class="subscription__phone-inp form__field" name="tel"
+                                        data-validate-field="tel" type="tel" placeholder="+7 (900) 000 00-00">
+
+                                </label>
+                            </div>
+                            <div class="modal-btn__wrap">
+                                <button type="submit" class="btn modal-btn">
+                                    Отправить заявку
+                                </button>
+                                <button data-fancybox-close class="btn-close">
+                                    Закрыть
+                                </button>
+                            </div>
+                        </form>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

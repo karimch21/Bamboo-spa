@@ -1,0 +1,371 @@
+@import "vars";
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    min-height: 100%;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $dark;
+    color: #ffffff;
+    font-family: "Jura", serif;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.body.fancybox-active {
+    overflow-y: hidden;
+}
+
+.wrapper {
+    overflow: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote {
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+address {
+    font-style: normal;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+input::placeholder {
+    color: #fff;
+}
+
+.container {
+    max-width: 1662px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.js-validate-error-label {
+    display: none;
+}
+
+.menu-burger {
+    width: 35px;
+    height: 30px;
+    position: relative;
+    &__line {
+        height: 4px;
+        width: 100%;
+        background-color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+    &::after,
+    &::before {
+        content: "";
+        width: 100%;
+        height: 4px;
+        background-color: #fff;
+        position: absolute;
+        left: 0;
+    }
+    &::after {
+        top: 0;
+    }
+    &::before {
+        bottom: 0;
+    }
+}
+
+.menu-close {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: relative;
+    transition: background-color 0.5s;
+    &__icon {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &:hover {
+        background-color: #cacaca;
+    }
+}
+
+.social__icon-wrap {
+    display: block;
+    width: 35px;
+    height: 35px;
+}
+
+.social__icon-wrap--size {
+    width: 40px;
+    height: 40px;
+}
+
+.social__item-link {
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #131313;
+    transition: background-color 0.5s;
+}
+
+.social__item-link:hover {
+    background-color: #cacaca;
+}
+
+.social__item-link path {
+    transition: fill 0.5s;
+}
+
+.social__item-link:hover path {
+    fill: #000000;
+}
+
+.social-item {
+    width: 85px;
+    height: 85px;
+}
+
+.menu-close__icon {
+    width: 24px;
+    height: 24px;
+}
+
+.tel__text,
+.contact__phone {
+    transition: color 0.5s;
+}
+
+.tel-img path {
+    transition: fill 0.5s;
+}
+
+.tel__text:hover,
+.contact__phone:hover {
+    color: #dadada;
+}
+
+.tel-img:hover path {
+    fill: #cacaca;
+}
+
+.btn,
+.btn-link,
+.btn-close {
+    padding: 21px 52px;
+    background: #ffffff;
+    box-shadow: 0px 5px 25px rgba(255, 255, 255, 0.48);
+    border-radius: 10px;
+    outline: none;
+    max-width: 225px;
+    width: 100%;
+    font-size: 26px;
+    line-height: 29px;
+    font-family: "Forum", cursive;
+    transition: all 0.8s;
+    border: 3px solid transparent;
+}
+
+.btn-link,
+.btn-close {
+    padding: 21px 44px;
+    max-width: 210px;
+    background-color: #0f0f0f;
+    border: 3px solid #ffffff;
+    color: #ffffff;
+    box-shadow: none;
+}
+
+.btn:hover {
+    background-color: $gray;
+    border: 3px solid #ffffff;
+    color: #fff;
+}
+
+.btn-link:hover,
+.btn-close:hover {
+    background-color: #fff;
+    color: #000000;
+    border-color: transparent;
+}
+
+.title,
+.title-center {
+    font-size: 72px;
+    line-height: 79px;
+    font-family: "Forum", cursive;
+}
+
+.title-center {
+    text-align: center;
+}
+
+.title-three {
+    font-size: 48px;
+    line-height: 53px;
+    font-family: "Forum", cursive;
+}
+
+.title-four {
+    font-size: 36px;
+    line-height: 40px;
+    font-family: "Forum", cursive;
+}
+
+.form {
+    &__title {
+        font-size: 36px;
+        line-height: 40px;
+    }
+    &__field {
+        padding: 28px;
+        padding-left: 40px;
+        width: 100%;
+        display: block;
+        background: #131313;
+        border: 3px solid #ffffff;
+        border-radius: 10px;
+        font-size: 32px;
+        line-height: 38px;
+        color: #ffffff;
+        font-family: "Jura", serif;
+    }
+    &__btn {
+        padding: 35px 41px;
+        max-width: 265px;
+    }
+}
+
+input::placeholder {
+    color: #fff;
+    font-family: "Jura", serif;
+    opacity: 1;
+}
+
+.form .jq-selectbox__select {
+    height: auto;
+    padding: 31px;
+    border: none;
+    border-bottom-color: transparent;
+    border-radius: 0px;
+    background: transparent;
+    box-shadow: none;
+    font: 32px/38px Arial, sans-serif;
+    color: #ffff;
+    text-shadow: none;
+}
+
+.form .jq-selectbox__trigger {
+    border-left: none;
+}
+
+.form .jq-selectbox__trigger-arrow {
+    position: absolute;
+    top: 50%;
+    right: 37px;
+    width: 38px;
+    height: 37px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    transform: translateY(-50%);
+    &::after {
+        content: url(../images/arrow-sel.svg);
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+
+.form .jq-selectbox__dropdown ul {
+    border-radius: 10px;
+    overflow: visible;
+    background-color: transparent;
+}
+
+.form .jq-selectbox li {
+    padding: 34px;
+    font-size: 32px;
+    color: #000000;
+    background-color: #fff;
+    transition: background-color 0.2s;
+    &:hover {
+        background-color: #131313;
+        color: #fff;
+    }
+}
+
+.form .jq-selectbox.focused .jq-selectbox__select {
+    border: none;
+}
+
+.form .jq-selectbox li:not(:last-child) {
+    margin-bottom: 4px;
+}
+
+.form .jq-selectbox__dropdown {
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 10px;
+    box-shadow: none;
+    font: 32px/32px Arial, sans-serif;
+    background-color: #131313;
+}

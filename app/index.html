@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bamboo</title>
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Jura:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <header class="header">
+                <div class="container">
+                    <div class="header__inner">
+                        <div class="header__menu-wrap menu-wrap">
+                            <button class="header__menu-burger menu-burger">
+                                <div class="menu-burger__line"></div>
+                            </button>
+
+                            <div class="header__navigation-wrap navigation-wrap">
+                                <nav class="header__menu-top menu-top">
+                                    <ul class="header__social-items social-items">
+                                        <li class="header__close-wrap social-item">
+                                            <button class="header__menu-close menu-close">
+                                                <svg class="menu-close__icon social__item-icon" viewBox="0 0 24 24"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M23.0307 0.969237C22.5868 0.52531 21.8677 0.52531 21.4239 0.969237L12.0001 10.393L2.57627 0.969237C2.13235 0.52531 1.41324 0.52531 0.96942 0.969237C0.525493 1.41317 0.525493 2.13227 0.96942 2.57609L10.3932 11.9999L0.96942 21.4237C0.525493 21.8676 0.525493 22.5867 0.96942 23.0305C1.19133 23.2525 1.48217 23.3635 1.7729 23.3635C2.06363 23.3635 2.35436 23.2525 2.57638 23.0305L12.0002 13.6067L21.424 23.0305C21.6459 23.2525 21.9367 23.3635 22.2275 23.3635C22.5182 23.3635 22.8089 23.2525 23.0309 23.0305C23.4749 22.5866 23.4749 21.8675 23.0309 21.4237L13.6071 11.9999L23.0309 2.57609C23.4747 2.13227 23.4747 1.41317 23.0307 0.969237Z"
+                                                        fill="#131313" />
+                                                </svg>
+                                            </button>
+                                        </li>
+                                        <li class="header__social-item social-item">
+                                            <a href="#" class="header__social-link social__item-link">
+                                                <span class="social__icon-wrap">
+                                                    <svg class="social__item-icon" width="100%" height="100%"
+                                                        viewBox="0 0 30 30" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M15.005 7.29752C10.7512 7.29752 7.3075 10.745 7.3075 14.995C7.3075 19.2488 10.755 22.6925 15.005 22.6925C19.2587 22.6925 22.7025 19.245 22.7025 14.995C22.7025 10.7413 19.255 7.29752 15.005 7.29752ZM15.005 19.9913C12.2437 19.9913 10.0087 17.755 10.0087 14.995C10.0087 12.235 12.245 9.99877 15.005 9.99877C17.765 9.99877 20.0012 12.235 20.0012 14.995C20.0025 17.755 17.7662 19.9913 15.005 19.9913Z"
+                                                            fill="white" />
+                                                        <path
+                                                            d="M21.1844 0.0965679C18.4244 -0.0321821 11.5882 -0.0259321 8.82568 0.0965679C6.39818 0.210318 4.25693 0.796568 2.53068 2.52282C-0.35432 5.40782 0.0144296 9.29532 0.0144296 14.9966C0.0144296 20.8316 -0.31057 24.6291 2.53068 27.4703C5.42693 30.3653 9.37068 29.9866 15.0044 29.9866C20.7844 29.9866 22.7794 29.9903 24.8232 29.1991C27.6019 28.1203 29.6994 25.6366 29.9044 21.1753C30.0344 18.4141 30.0269 11.5791 29.9044 8.81657C29.6569 3.55032 26.8307 0.356568 21.1844 0.0965679ZM25.5532 25.5616C23.6619 27.4528 21.0382 27.2841 14.9682 27.2841C8.71818 27.2841 6.21193 27.3766 4.38318 25.5428C2.27693 23.4466 2.65818 20.0803 2.65818 14.9766C2.65818 8.07032 1.94943 3.09657 8.88068 2.74157C10.4732 2.68532 10.9419 2.66657 14.9507 2.66657L15.0069 2.70407C21.6682 2.70407 26.8944 2.00657 27.2082 8.93657C27.2794 10.5178 27.2957 10.9928 27.2957 14.9953C27.2944 21.1728 27.4119 23.6941 25.5532 25.5616Z"
+                                                            fill="white" />
+                                                        <path
+                                                            d="M23.0075 8.79249C24.0009 8.79249 24.8062 7.98716 24.8062 6.99374C24.8062 6.00032 24.0009 5.19499 23.0075 5.19499C22.0141 5.19499 21.2087 6.00032 21.2087 6.99374C21.2087 7.98716 22.0141 8.79249 23.0075 8.79249Z"
+                                                            fill="white" />
+                                                    </svg>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="header__social-item social-item">
+                                            <a href="#" class="header__social-link social__item-link">
+                                                <span class="social__icon-wrap social__icon-wrap--size">
+                                                    <svg class="social__item-icon" width="100%" height="100%"
+                                                        viewBox="0 0 40 26" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M20.2417 25.5C26.0283 25.5 23.965 21.8367 24.4117 20.7833C24.405 19.9967 24.3983 19.24 24.425 18.78C24.7917 18.8833 25.6567 19.3217 27.4433 21.0583C30.2017 23.8417 30.9067 25.5 33.135 25.5H37.2367C38.5367 25.5 39.2133 24.9617 39.5517 24.51C39.8783 24.0733 40.1983 23.3067 39.8483 22.1133C38.9333 19.24 33.5967 14.2783 33.265 13.755C33.315 13.6583 33.395 13.53 33.4367 13.4633H33.4333C34.4867 12.0717 38.5067 6.04833 39.0983 3.63833C39.1 3.635 39.1017 3.63 39.1017 3.625C39.4217 2.525 39.1283 1.81167 38.825 1.40833C38.3683 0.805 37.6417 0.5 36.66 0.5H32.5583C31.185 0.5 30.1433 1.19167 29.6167 2.45333C28.735 4.695 26.2583 9.305 24.4017 10.9367C24.345 8.625 24.3833 6.86 24.4133 5.54833C24.4733 2.99 24.6667 0.5 22.0117 0.5H15.565C13.9017 0.5 12.31 2.31667 14.0333 4.47333C15.54 6.36333 14.575 7.41667 14.9 12.66C13.6333 11.3017 11.38 7.63333 9.78667 2.945C9.34 1.67667 8.66333 0.501667 6.75833 0.501667H2.65667C0.993333 0.501667 0 1.40833 0 2.92667C0 6.33667 7.54833 25.5 20.2417 25.5ZM6.75833 3.00167C7.12 3.00167 7.15667 3.00167 7.425 3.76333C9.05667 8.56833 12.7167 15.6783 15.39 15.6783C17.3983 15.6783 17.3983 13.62 17.3983 12.845L17.3967 6.675C17.2867 4.63333 16.5433 3.61667 16.055 3L21.9017 3.00667C21.905 3.035 21.8683 9.83167 21.9183 11.4783C21.9183 13.8167 23.775 15.1567 26.6733 12.2233C29.7317 8.77167 31.8467 3.61167 31.9317 3.40167C32.0567 3.10167 32.165 3 32.5583 3H36.66H36.6767C36.675 3.005 36.675 3.01 36.6733 3.015C36.2983 4.765 32.5967 10.3417 31.3583 12.0733C31.3383 12.1 31.32 12.1283 31.3017 12.1567C30.7567 13.0467 30.3133 14.03 31.3767 15.4133H31.3783C31.475 15.53 31.7267 15.8033 32.0933 16.1833C33.2333 17.36 37.1433 21.3833 37.49 22.9833C37.26 23.02 37.01 22.9933 33.135 23.0017C32.31 23.0017 31.665 21.7683 29.2033 19.285C26.99 17.1317 25.5533 16.2517 24.245 16.2517C21.705 16.2517 21.89 18.3133 21.9133 20.8067C21.9217 23.51 21.905 22.655 21.9233 22.825C21.775 22.8833 21.35 23 20.2417 23C9.66667 23 2.78 6.215 2.515 3.00667C2.60667 2.99833 3.86833 3.00333 6.75833 3.00167Z"
+                                                            fill="white" />
+                                                    </svg>
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+
+                                <div class="header__menu-block">
+                                    <a href="#" class="header-logo logo">
+                                        <picture>
+                                            <source srcset="images/logo-menu-mini.svg" media="(max-width: 400px)">
+                                            <img src="images/logo-menu.svg" alt="">
+                                        </picture>
+                                    </a>
+
+                                    <nav class="header__menu menu">
+                                        <div class="header-menu__list-wrap menu__list-wrap">
+                                            <ul class="header-menu__list menu__list header-menu__list--mr">
+                                                <li class="header-menu__item menu__item"><a href="#about-us" class="header-menu__link menu__list-link">О нас</a></li>
+                                                <li class="header-menu__item menu__item"><a href="#benefits" class="header-menu__link menu__list-link">Преимущества</a></li>
+                                                <li class="header-menu__item menu__item"><a href="#gallery" class="header-menu__link menu__list-link">Галерея</a></li>
+                                                <li class="header-menu__item menu__item"><a href="#stock" class="header-menu__link menu__list-link">Акции</a></li>
+                                                <li class="header-menu__item menu__item"><a href="#services" class="header-menu__link menu__list-link">Услуги</a></li>
+                                            </ul>
+                                            <ul class="header-menu__list menu__list">
+                                                <li class="header-menu__item menu__item"><a href="#certificates" class="header-menu__link menu__list-link">Сертификаты</a></li>
+                                                <li class="header-menu__item menu__item"><a href="#review" class="header-menu__link menu__list-link">Отзывы</a></li>
+                                                <li class="header-menu__item menu__item"><a href="#contact" class="header-menu__link menu__list-link">Контакты</a></li>
+                                            </ul>
+                                        </div>
+                                    </nav>
+
+                                    <p class="header__text-time">
+                                        Работаем с <time datetime="2020-05-15 10:00"> 10:00</time> до <time datetime="2020-05-15 22:00">22:00</time>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="tel:73433282297" class="header__tel tel">
+                            <span class="tel__text">+7 (343) 328-22-97</span>
+                            <svg class="tel-img" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M25.2919 19.0814L21.6635 15.453C20.3677 14.1572 18.1647 14.6755 17.6464 16.3601C17.2576 17.5264 15.9618 18.1743 14.7955 17.9151C12.2038 17.2672 8.70504 13.898 8.05711 11.1767C7.66836 10.0104 8.44587 8.71453 9.61213 8.32583C11.2967 7.80749 11.8151 5.60455 10.5192 4.3087L6.89085 0.680321C5.85417 -0.226774 4.29915 -0.226774 3.39206 0.680321L0.929942 3.14243C-1.53217 5.73413 1.18911 12.6021 7.2796 18.6926C13.3701 24.7831 20.2381 27.634 22.8298 25.0423L25.2919 22.5802C26.1991 21.5435 26.1991 19.9885 25.2919 19.0814Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                        <button class="header__btn btn" data-fancybox data-src="#modal-record">Онлайн запись</button>
+                    </div>
+                </div>
+            </header>
+
+            <section class="mainblock">
+                <div class="container">
+                    <div class="mainblock__inner">
+                        <a href="#" class="mainblock__logo logo">
+                            <img src="images/logo.svg" alt="">
+                        </a>
+                        <h1 class="mainblock__title">Отдыхай, расслабляясь телом и душой</h1>
+                    </div>
+                    <a href="#about-us" class="mainblock__link-down link__down">
+                        <span class="mainblock-link__text">Вниз</span>
+                    </a>
+                </div>
+            </section>
+
+            <section id="about-us" class="about-us">
+                <div class="container">
+                    <div class="about-us__inner">
+                        <div class="about-us__content">
+                            <h2 class="about-us__title">
+                                О нас
+                            </h2>
+                            <p class="about-us__text">
+                                Мы команда молодых и современных ребят и мы не хотим быть скучным салонишкой, поэтому постоянно креативим над видео, пытаемся быть более дерзкими в видео и подаче, организовываем тусовки с гостями за городом с массажами и съемками
+                            </p>
+                        </div>
+
+
+                        <div class="about-us__img">
+                            <img src="images/about-us.jpg" alt="">
+                        </div>
+                        <div class="about-us__btn-wrap">
+                            <button class="about-us__btn btn" data-fancybox data-src="#modal-record">
+                                Записаться
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="benefits" class="advantages">
+                <div class="container">
+                    <h2 class="advantages__title title-center">
+                        Преимущества
+                    </h2>
+                    <div class="advantages__swiper-container swiper-container">
+                        <ul class="advantages__list advantages__list-wrapper swiper-wrapper">
+                            <li class="advantages__item swiper-slide">
+                                <img src="images/advantages-bg1.jpg" alt="" class="advantages__item-bg">
+                                <div class="advantages__item-content">
+                                    <h3 class="advantages__item-title">
+                                        Атмосфера
+                                    </h3>
+                                    <p class="advantages__item-text">
+                                        Все наши мастерские мы создаем своими руками. Каждый из команды вносит свой вклад и оставляет частичку себя на стенах и в кабинетах. В декоре мастерских можно встретить необычные и уникальные решения, которые обязательно оставят в вашей памяти приятный
+                                        след.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="advantages__item swiper-slide">
+                                <img src="images/advantages-bg2.jpg" alt="" class="advantages__item-bg">
+                                <div class="advantages__item-content">
+                                    <h3 class="advantages__item-title">
+                                        Высокое качество
+                                    </h3>
+                                    <p class="advantages__item-text">
+                                        В нашей команде используется множество постоянно развивающихся техник. Мы пробуем сочетать их, и благодаря этому наш массаж дает крутой результат, который сохраняется и накапливается. Вы будете чувствовать его в работе, отдыхе, спорте и даже во сне.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="advantages__item swiper-slide">
+                                <img src="images/advantages-bg3.jpg" alt="" class="advantages__item-bg">
+                                <div class="advantages__item-content">
+                                    <h3 class="advantages__item-title">
+                                        Сервис
+                                    </h3>
+                                    <p class="advantages__item-text">
+                                        Мы удовлетворяем потребности каждого клиента в зависимости от особенностей поставленных им задач. Мы учитываем все пожелания клиента.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="advantages__item swiper-slide">
+                                <img src="images/advantages-bg4.jpg" alt="" class="advantages__item-bg">
+                                <div class="advantages__item-content">
+                                    <h3 class="advantages__item-title">
+                                        Собственная система отбора мастеров и обучения
+                                    </h3>
+                                    <p class="advantages__item-text">
+                                        В нашу команду попадают единицы из большинства массажистов. Это опытные и образованные мастера, которые, будучи частью нашей команды, становятся экспертами в массаже.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="advantages__item swiper-slide">
+                                <img src="images/advantages-bg5.jpg" alt="" class="advantages__item-bg">
+                                <div class="advantages__item-content">
+                                    <h3 class="advantages__item-title">
+                                        Разнообразие программ
+                                    </h3>
+                                    <p class="advantages__item-text">
+                                        Мы предлагаем множество процедур красоты. Они сделают Вашу кожу лица и тела красивой, более упругой и ухоженной. Можно выбрать программу с камнями для себя или в качестве подарка. Любая выбранная программа в меню BamBoo Вас приятно расслабит и поднимет
+                                        настроение.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="advantages__item swiper-slide">
+                                <img src="images/advantages-bg6.jpg" alt="" class="advantages__item-bg">
+                                <div class="advantages__item-content">
+                                    <h3 class="advantages__item-title">
+                                        Профессиональная косметика
+                                    </h3>
+                                    <p class="advantages__item-text">
+                                        Мы используем только профессиональную косметику высокого качества. Омолаживающий массаж лица с применением лифтинг крема, вот что такое программа "Эликсир молодости" в понимании BamBoo spa)
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+
+
+
+                        <div class="advantages__swiper-btns">
+                            <div class="advantages__btns-wrap">
+                                <button class="advantages__btn advantages__btn-prev swiper-button-prev">
+                                    <svg width="100%" height="100%" viewBox="0 0 21 37" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M3.97059 18.5086L20.0491 2.43C20.605 1.87407 20.605 0.97276 20.0491 0.416826C19.4931 -0.138942 18.5919 -0.138942 18.036 0.416826L0.950822 17.502C0.395055 18.0579 0.395055 18.9592 0.950822 19.5151L18.036 36.6003C18.6016 37.1465 19.5029 37.1309 20.0491 36.5652C20.582 36.0135 20.582 35.1388 20.0491 34.5871L3.97059 18.5086Z"
+                                            fill="white" />
+                                    </svg>
+                                </button>
+                                <button class="advantages__btn advantages__btn-next swiper-button-next">
+                                    <svg width="100%" height="100%" viewBox="0 0 20 37" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16.4954 18.5086L0.416866 2.43C-0.138985 1.87407 -0.138985 0.97276 0.416866 0.416826C0.972883 -0.138942 1.87411 -0.138942 2.43004 0.416826L19.5152 17.502C20.0709 18.0579 20.0709 18.9592 19.5152 19.5151L2.43004 36.6003C1.86443 37.1465 0.963123 37.1309 0.416866 36.5652C-0.115961 36.0135 -0.115961 35.1388 0.416866 34.5871L16.4954 18.5086Z"
+                                            fill="white" />
+                                    </svg>
+                                </button>
+                                <div class="advantages__swiper-pagination swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="services" class="programms">
+                <div class="container">
+                    <h2 class="programms__title title-center">
+                        Наши программы
+                    </h2>
+
+                    <article class="programms__service varieties">
+                        <div class="programms-wrap__content varieties-wrap__content">
+                            <div class="programms__figure-content programms__service-content varieties-content varieties-grid">
+                                <h3 class="programms__service-title title-three">
+                                    Коррекция фигуры
+                                </h3>
+                                <p class="programms__figure-text programms__service-text">
+                                    Корректирующие разминания для тех, кто заботится о своей фигуре. Качественно улучшает состояние кожи и подкожных тканей. Это работает, но нужно терпеть.
+                                </p>
+                            </div>
+                            <div class="programms__service-btns varieties-btns varieties-grid">
+                                <button class="programms__service-btn btn varieties-btn" data-fancybox data-src="#modal-record">
+                                    Записаться
+                                </button>
+                                <a href="figure.html" class="programms__service-link btn-link varieties-detailed">Подробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="programms__service-img varieties-img varieties-grid">
+                            <img src="images/programms1.jpg" alt="">
+                        </div>
+                    </article>
+
+                    <article class="programms__service varieties">
+                        <div class="programms__service-img varieties-img varieties-grid">
+                            <img src="images/programms2.jpg" alt="">
+                        </div>
+
+                        <div class="programms-wrap__content varieties-wrap__content">
+                            <div class="programms__service-content varieties-content varieties-grid">
+                                <h3 class="programms__service-title title-three">
+                                    Классические массажы
+                                </h3>
+                                <p class=" programms__service-text">
+                                    Комплексное оздоровление и повышение работоспособности. 30 минут – только спина, 60 минут – общее.
+                                </p>
+                            </div>
+                            <div class="programms__service-btns varieties-btns varieties-grid">
+                                <button class="programms__service-btn btn varieties-btn" data-fancybox data-src="#modal-record">
+                                    Записаться
+                                </button>
+                                <a href="massage.html" class="programms__service-link  btn-link varieties-detailed">Подробнее</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="programms__service varieties">
+                        <div class="programms-wrap__content varieties-wrap__content">
+                            <div class="programms__service-content varieties-content varieties-grid">
+                                <h3 class="programms__service-title title-three">
+                                    Spa программы
+                                </h3>
+                                <p class="programms__service-text">
+                                    Мы предлагаем Spa-процедуру, которая включает в себя общий массаж всего тела с элементами разминания и релаксации.
+                                </p>
+                            </div>
+                            <div class="programms__service-btns varieties-btns varieties-grid">
+                                <button class="programms__service-btn btn varieties-btn" data-fancybox data-src="#modal-record">
+                                    Записаться
+                                </button>
+                                <button class="programms__service-link  btn-link varieties-detailed">Подробнее</button>
+                            </div>
+                        </div>
+
+                        <div class="programms__service-img varieties-img varieties-grid">
+                            <img src="images/programms3.jpg" alt="">
+                        </div>
+                    </article>
+
+                    <article class="programms__service varieties">
+                        <div class="programms__service-img varieties-img varieties-grid">
+                            <img src="images/programms4.jpg" alt="">
+                        </div>
+
+                        <div class="programms-wrap__content varieties-wrap__content">
+                            <div class="programms__service-content varieties-content varieties-grid">
+                                <h3 class="programms__service-title title-three">
+                                    Массаж лица
+                                </h3>
+                                <p class="programms__service-text">
+                                    Специалист делает ручной массаж лица клиенту. При этом он воздействует на определенные точки для расслабления мышц.
+                                </p>
+                            </div>
+                            <div class="programms__service-btns varieties-btns varieties-grid">
+                                <button class="programms__service-btn btn varieties-btn" data-fancybox data-src="#modal-record">
+                                    Записаться
+                                </button>
+                                <button class="programms__service-link  btn-link varieties-detailed">Подробнее</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="gallery" class="gallery">
+                <h2 class="gallery__title title-center">
+                    Галерея
+                </h2>
+
+                <div class="gallery__swiper-container swiper-container">
+                    <div class="gallery__swiper-counter">
+                        <p class="gallery__counter-text">Моменты нашей истории</p>
+                        <div class="gallery__swiper-pagination swiper-pagination"></div>
+                    </div>
+                    <div class="gallery__swiper-wrapper swiper-wrapper">
+                        <div class="gallery__swiper-slide swiper-slide">
+                            <img src="images/gallery1.jpg" alt="">
+                        </div>
+                        <div class="gallery__swiper-slide swiper-slide">
+                            <img src="images/gallery2.jpg" alt="">
+                        </div>
+                        <div class="gallery__swiper-slide swiper-slide">
+                            <img src="images/gallery3.jpg" alt="">
+                        </div>
+                        <div class="gallery__swiper-slide swiper-slide">
+                            <img src="images/gallery1.jpg" alt="">
+                        </div>
+                        <div class="gallery__swiper-slide swiper-slide">
+                            <img src="images/gallery2.jpg" alt="">
+                        </div>
+                        <div class="gallery__swiper-slide swiper-slide">
+                            <img src="images/gallery3.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="gallery__swiper-btns">
+                        <button class="gallery__swiper-btn gallery__swiper-next swiper-button-next">
+                            <svg width="21" height="37" viewBox="0 0 21 37" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3.97059 18.5086L20.0491 2.43C20.605 1.87407 20.605 0.97276 20.0491 0.416826C19.4931 -0.138942 18.5919 -0.138942 18.036 0.416826L0.950822 17.502C0.395055 18.0579 0.395055 18.9592 0.950822 19.5151L18.036 36.6003C18.6016 37.1465 19.5029 37.1309 20.0491 36.5652C20.582 36.0135 20.582 35.1388 20.0491 34.5871L3.97059 18.5086Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                        <button class="gallery__swiper-btn gallery__swiper-prev swiper-button-prev">
+                            <svg width="20" height="37" viewBox="0 0 20 37" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.4954 18.5086L0.416866 2.43C-0.138985 1.87407 -0.138985 0.97276 0.416866 0.416826C0.972883 -0.138942 1.87411 -0.138942 2.43004 0.416826L19.5152 17.502C20.0709 18.0579 20.0709 18.9592 19.5152 19.5151L2.43004 36.6003C1.86443 37.1465 0.963123 37.1309 0.416866 36.5652C-0.115961 36.0135 -0.115961 35.1388 0.416866 34.5871L16.4954 18.5086Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <seection id="certificates" class="certificates">
+                <div class="container">
+                    <h2 class="certificates__title title-center">
+                        Сертификаты
+                    </h2>
+                    <div class="certificates__block">
+                        <div class="certificates__img">
+                            <img src="images/certificate.jpg" alt="">
+                        </div>
+                        <div class="certificates__content">
+                            <h3 class="certificates__content-title title-three">
+                                Подари массаж близкому человеку
+                            </h3>
+                            <p class="certificates__text">
+                                Это ценный и правильный подарок, ваш близкий человек получит незабываемые эмоции и, самое главное, пользу для здоровья
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </seection>
+
+            <section class="registration">
+                <div class="container">
+                    <div class="registration-wrapper questionnaire-wrapper">
+
+                        <div class="registration__content">
+
+                            <article class="questionnaire-item registration-item registration__standard registration-item--active" id="standard">
+
+                                <div class="registration-item__head">
+                                    <h2 class="questionnaire-title registration-item__title">
+                                        Выбираем раздел, вид, количество массажей и указываем фио получателя
+                                    </h2>
+                                    <div class="registration__tabs">
+                                        <button class="registration__tab registration__tab-left registration__tab--active" data-id="standard">Стандарт</button>
+                                        <button class="registration__tab registration__tab-right" data-id="denomination">Номинал</button>
+                                    </div>
+                                </div>
+
+                                <form class="form form-1 registration__standard-form" action="/">
+                                    <div class="questionnaire-block registration__block">
+                                        <label class="questionnaire-el registration__block-wrap registration__block-section">
+                                            <div class="registration__block-title form__title"> Раздел</div>
+                                            <select name="" id="" class="registration__sel form__field">
+                                                <option value="" selected>
+                                                    Класcика
+                                                </option>
+                                                <option value="">
+                                                    Спа программы
+                                                </option>
+                                                <option value="">
+                                                    Коррекция фигуры
+                                                </option>
+                                                <option value="">
+                                                    Массаж лица
+                                                </option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                    <div class="questionnaire-block registration__block">
+                                        <label class="questionnaire-el registration__block-wrap registration__block-view">
+                                            <div class="registration__block-title form__title">Вид</div>
+
+                                            <select name="" id="" class="registration__sel form__field">
+                                                <option value="" selected>
+                                                    Релакс
+                                                </option>
+                                                <option value="">
+                                                    -----
+                                                </option>
+                                                <option value="">
+                                                    -----
+                                                </option>
+                                                <option value="">
+                                                    -----
+                                                </option>
+                                            </select>
+                                        </label>
+                                        <label class="questionnaire-el registration__block-wrap registration__block-counter">
+                                            <div
+                                                class="registration__block-title registration__block-title--widthlarge form__title">
+                                                Количество</div>
+                                            <div class="registration__counter-wrap form__field">
+                                                <button class="registration__counter-sign registration__counter-less">
+                                                    <img src="images/less.svg" alt="">
+                                                </button>
+                                                <input type="text" class="forRegexp registration__counter-inp"
+                                                    value="1">
+                                                <button class="registration__counter-sign registration__counter-more">
+                                                    <img src="images/pluss.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </label>
+                                        <label class="questionnaire-el registration__block-wrap registration__block-time">
+                                            <div
+                                                class="registration__block-title registration__block-title--widthless form__title">
+                                                Время
+                                            </div>
+                                            <select name="" id=""
+                                                class="registration__sel registration__time-sel form__field">
+                                                <option value="" selected>
+                                                    30 мин
+                                                </option>
+                                                <option value="">
+                                                    45 мин
+                                                </option>
+                                                <option value="">
+                                                    1 час
+                                                </option>
+                                                <option value="">
+                                                    1.15 час
+                                                </option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                    <div class="questionnaire-block registration__block">
+                                        <label class="questionnaire-el registration__block-wrap registration__block-fullname">
+                                            <div class="registration__block-title form__title"> ФИО</div>
+                                            <input type="text" name="fullname" data-validate-field="fullname"
+                                                class="inp-text registration__fullname-inp form__field"
+                                                placeholder="Мурсалов Мурсал">
+                                        </label>
+                                        <button class="btn registration__btn form__btn" type="submit">
+                                            Оформить
+                                        </button>
+                                        <output class="registration__output-inp">1 500 руб</output>
+                                    </div>
+                                </form>
+
+                            </article>
+
+                            <article class="questionnaire-item registration-item registration__denomination" id="denomination">
+                                <div class="registration-item__head">
+                                    <h2 class="questionnaire-title registration-item__title">
+                                        Указываем номинальную сумму<br> и фио получателя
+                                    </h2>
+                                    <div class="registration__tabs">
+                                        <button class="registration__tab registration__tab-left " data-id="standard">Стандарт</button>
+                                        <button class="registration__tab registration__tab-right" data-id="denomination">Номинал</button>
+                                    </div>
+                                </div>
+
+                                <form class="form form-2 registration__denomination-form" action="/">
+                                    <div class="questionnaire-block registration__denomination-wrap">
+                                        <label class="questionnaire-el registration__block-wrap registration__block-sum">
+                                            <div class="registration__block-title form__title">Сумма</div>
+                                            <input type="text" class="forRegexp registration__sum-inp form__field"
+                                                placeholder="2 500 руб">
+                                        </label>
+                                        <label class="questionnaire-el registration__block-wrap registration__block-fullname">
+                                            <div class="registration__block-title form__title"> ФИО</div>
+                                            <input type="text" name="fullname" data-validate-field="fullname"
+                                                class="inp-text registration__fullname-inp form__field"
+                                                placeholder="Мурсалов Мурсал">
+                                        </label>
+                                    </div>
+                                    <div class="questionnaire-block registration__denomination-wrap registration__denomination-wrap--margin">
+                                        <button class="btn registration__denomination-btn form__btn" type="submit">
+                                            Оформить сертификат
+                                        </button>
+                                        <output class="registration__output-inp">2 500 руб</output>
+                                        <p class="registration__output-text">
+                                            2 500 руб. – минимальная сумма на которую можно сделать сертификат
+                                        </p>
+                                    </div>
+                                    <p class="questionnaire-replacement registration__denomination-replacement">
+                                        Сертификат действует 2 месяца со дня приобретения
+                                    </p>
+                                </form>
+                            </article>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="subscription">
+                <div class="container">
+                    <h2 class="subscription__title">
+                        <span class="subscription__title-text title-center">или</span>
+                    </h2>
+                    <div class="questionnaire-wrapper">
+                        <article class="questionnaire-item">
+                            <h2 class="subscription__item-title questionnaire-title">
+                                Подобрать абонемент
+                            </h2>
+
+                            <form class="form form-3" action="/">
+                                <div class="subscription-block questionnaire-block">
+                                    <label class="questionnaire-el subscription__el-massage">
+                                        <div class="subscription__el-title form__title"> Массаж</div>
+                                        <select name="" id="" class="subscription__field  form__field">
+                                            <option value="" selected>
+                                                Коррекция фигуры
+                                            </option>
+                                            <option value="">
+                                                -----
+                                            </option>
+                                            <option value="">
+                                                -----
+                                            </option>
+                                            <option value="">
+                                                -----
+                                            </option>
+                                        </select>
+                                    </label>
+                                    <label class="questionnaire-el subscription__el-quantity">
+                                        <div class="subscription__title-two form__title"> Количество</div>
+                                        <select name="" id="" class="subscription__field  form__field">
+                                            <option value="" selected>
+                                                10 сеансов
+                                            </option>
+                                            <option value="">
+                                                -----
+                                            </option>
+                                            <option value="">
+                                                -----
+                                            </option>
+                                            <option value="">
+                                                -----
+                                            </option>
+                                        </select>
+                                    </label>
+                                </div>
+                                <div class="questionnaire-block subscription-block">
+                                    <label class="questionnaire-el subscription-el__fullname">
+                                        <div class="subscription__el-title form__title"> ФИО</div>
+                                        <input type="text" name="fullname" data-validate-field="fullname"
+                                            class="inp-text subscription__field subscription__fullname form__field"
+                                            placeholder="Мурсалов Мурсал">
+                                    </label>
+                                    <label class="questionnaire-el subscription__el-phone">
+                                        <div class="subscription__title-two form__title">
+                                            Телефон
+                                        </div>
+                                        <input class="subscription__phone-inp form__field" name="tel"
+                                            data-validate-field="tel" type="tel" placeholder="+7 (900) 000 00-00">
+
+                                    </label>
+                                </div>
+                                <div class="questionnaire-block">
+
+                                    <button class="subscription__btn btn form__btn" type="submit">
+                                        Оформить абонемент
+                                    </button>
+                                    <output class="subscription__output">1 500 руб</output>
+                                </div>
+                            </form>
+                            <p class="questionnaire-replacement subscription-replacement">
+                                Абонемент на 5 сеансов действует 90 дней, на 10 сеансов - 90 дней
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="review" class="review">
+                <div class="review-container--top container">
+                    <h2 class="review__title title-center">
+                        Отзывы
+                    </h2>
+                    <h4 class="review__title-mini title-four">
+                        Про нас много говорят и нас действительно любят
+                    </h4>
+                    <p class="review__text">
+                        Наши люди гордятся тем, что нашли такое место, как Bamboo, а мы рады тому, что дарим положительные эмоции
+                    </p>
+                </div>
+                <div class="review-container container">
+                    <div class="review-swiper__container swiper-container">
+                        <div class="review-swiper__wrapper swiper-wrapper">
+
+                            <div class="review-swiper__slide swiper-slide">
+                                <div class="review-swiper__slide-inner review-block review-front">
+                                    <div class="review__img-wrap">
+                                        <img src="images/review-slide1.jpg" alt="" class="review__img">
+                                    </div>
+                                    <div class="review__content">
+                                        <p class="review__content-text">
+                                            Очень приятная и ароматная атмосфера, необычайно красиво и уютно. Ароматный чай, вкусный кальян, ну и конечно волшебный релаксирующий Массаж тела. Это ли не Любовь к себе. ️Идеально. Ну и главное что я отмечу. Это добрые, вежливые и приятные сотрудники
+                                            спа салона, очень внимательное отношение к клиентам, это учитывая то, что я релаксировала там абсолютно бесплатно️, клиентоориентированность,отношение покорило. Ребята в @bamboospaekb профессионалы в своего
+                                            дела, много благодарных клиентов вам и большое спасибо за Релакс души и тела. К вам хочется вернуться
+                                        </p>
+                                        <a href="#" class="review__content-link">@gubaanovaa</a>
+                                        <button class="review__btn btn">
+                                            Читать отзыв
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="review-block review-back">
+                                    <p class="review-back__text">
+                                        Очень приятная и ароматная атмосфера, необычайно красиво и уютно. Ароматный чай, вкусный кальян, ну и конечно волшебный релаксирующий Массаж тела. Это ли не Любовь к себе. ️Идеально. Ну и главное что я отмечу. Это добрые, вежливые и приятные сотрудники
+                                        спа салона, очень внимательное отношение к клиентам, это учитывая то, что я релаксировала там абсолютно бесплатно️, клиентоориентированность,отношение покорило. Ребята в @bamboospaekb профессионалы в своего дела,
+                                        много благодарных клиентов вам и большое спасибо за Релакс души и тела. К вам хочется вернуться
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="review-swiper__slide swiper-slide">
+                                <div class="review-swiper__slide-inner review-block review-front">
+                                    <div class="review__img-wrap">
+                                        <img src="images/review-slide2.jpg" alt="" class="review__img">
+                                    </div>
+                                    <div class="review__content">
+                                        <p class="review__content-text">
+                                            Очень приятная и ароматная атмосфера, необычайно красиво и уютно. Ароматный чай, вкусный кальян, ну и конечно волшебный релаксирующий Массаж тела. Это ли не Любовь к себе. ️Идеально. Ну и главное что я отмечу. Это добрые, вежливые и приятные сотрудники
+                                            спа салона, очень внимательное отношение к клиентам, это учитывая то, что я релаксировала там абсолютно бесплатно️, клиентоориентированность,отношение покорило. Ребята в @bamboospaekb профессионалы в своего
+                                            дела, много благодарных клиентов вам и большое спасибо за Релакс души и тела. К вам хочется вернуться
+                                        </p>
+                                        <a href="#" class="review__content-link">@gubaanovaa</a>
+                                        <button class="review__btn btn">
+                                            Читать отзыв
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="review-block review-back">
+                                    <p class="review-back__text">
+                                        Очень приятная и ароматная атмосфера, необычайно красиво и уютно. Ароматный чай, вкусный кальян, ну и конечно волшебный релаксирующий Массаж тела. Это ли не Любовь к себе. ️Идеально. Ну и главное что я отмечу. Это добрые, вежливые и приятные сотрудники
+                                        спа салона, очень внимательное отношение к клиентам, это учитывая то, что я релаксировала там абсолютно бесплатно️, клиентоориентированность,отношение покорило. Ребята в @bamboospaekb профессионалы в своего дела,
+                                        много благодарных клиентов вам и большое спасибо за Релакс души и тела. К вам хочется вернуться
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="review-swiper__slide swiper-slide">
+                                <div class="review-swiper__slide-inner review-block review-front">
+                                    <div class="review__img-wrap">
+                                        <img src="images/review-slide3.jpg" alt="" class="review__img">
+                                    </div>
+                                    <div class="review__content">
+                                        <p class="review__content-text">
+                                            Очень приятная и ароматная атмосфера, необычайно красиво и уютно. Ароматный чай, вкусный кальян, ну и конечно волшебный релаксирующий Массаж тела. Это ли не Любовь к себе. ️Идеально. Ну и главное что я отмечу. Это добрые, вежливые и приятные сотрудники
+                                            спа салона, очень внимательное отношение к клиентам, это учитывая то, что я релаксировала там абсолютно бесплатно️, клиентоориентированность,отношение покорило. Ребята в @bamboospaekb профессионалы в своего
+                                            дела, много благодарных клиентов вам и большое спасибо за Релакс души и тела. К вам хочется вернуться
+                                        </p>
+                                        <a href="#" class="review__content-link">@gubaanovaa</a>
+                                        <button class="review__btn btn">
+                                            Читать отзыв
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="review-block review-back">
+                                    <p class="review-back__text">
+                                        Очень приятная и ароматная атмосфера, необычайно красиво и уютно. Ароматный чай, вкусный кальян, ну и конечно волшебный релаксирующий Массаж тела. Это ли не Любовь к себе. ️Идеально. Ну и главное что я отмечу. Это добрые, вежливые и приятные сотрудники
+                                        спа салона, очень внимательное отношение к клиентам, это учитывая то, что я релаксировала там абсолютно бесплатно️, клиентоориентированность,отношение покорило. Ребята в @bamboospaekb профессионалы в своего дела,
+                                        много благодарных клиентов вам и большое спасибо за Релакс души и тела. К вам хочется вернуться
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="review__swiper-btns">
+                            <button class="review__btn-prev review__swiper-btn swiper-button-prev">
+                                <svg width="19" height="35" viewBox="0 0 19 35" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M17.9522 32.667L3.7814 18.4667C3.24833 17.9337 3.24833 17.0663 3.78242 16.5322L17.9522 2.33295C18.4856 1.79845 18.4846 0.932816 17.9502 0.399476C17.4157 -0.133932 16.55 -0.133044 16.0167 0.401458L1.84792 14.5998C0.24872 16.199 0.24872 18.8011 1.84689 20.3992L16.0167 34.5985C16.2838 34.8661 16.6341 35 16.9845 35C17.3338 35 17.6834 34.8668 17.9502 34.6005C18.4847 34.0671 18.4856 33.2015 17.9522 32.667Z"
+                                        fill="black" />
+                                </svg>
+                            </button>
+                            <button class="review__btn-next review__swiper-btn swiper-button-next">
+                                <svg width="19" height="35" viewBox="0 0 19 35" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1.04773 32.667L15.2186 18.4667C15.7516 17.9337 15.7516 17.0663 15.2175 16.5322L1.0478 2.33295C0.514391 1.79845 0.515347 0.932816 1.04978 0.399476C1.58428 -0.133932 2.44992 -0.133044 2.98326 0.401458L17.152 14.5998C18.7512 16.199 18.7512 18.8011 17.1531 20.3992L2.98326 34.5985C2.71618 34.8661 2.3659 35 2.01549 35C1.66611 35 1.31659 34.8668 1.04971 34.6005C0.51528 34.0671 0.514389 33.2015 1.04773 32.667Z"
+                                        fill="black" />
+                                </svg>
+                            </button>
+                            <div class="review__swiper-pagination swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+        <footer id="contact" class="footer">
+            <div class="container footer__inner">
+                <div class="footer-content">
+                    <picture class="footer-logo logo">
+                        <source srcset="images/footer-mini-logo.svg" media="(max-width: 520px)">
+                        <img src="images/logo-menu.svg" alt="">
+                    </picture>
+                    <h4 class="footer__title title-four">
+                        Отдыхай, расслабляясь телом и душой
+                    </h4>
+                    <address class="footer-contact contact">
+                        <a href="tel: 73433282297" class="footer__phone contact__phone">
+                            +7 (343) 328-22-97
+                        </a>
+                        <a href="tel: 79221882297" class="footer__phone contact__phone">
+                            +7 (922) 188-22-97
+                        </a>
+                        <p class="footer__text contact__text">
+                            ул. Белинского, 108, Екатеринбург
+                        </p>
+                        <ul class="footer__social contact-social">
+                            <li class="footer__social-item contact-social__item">
+                                <a href="#" class="footer__social-link contact-social__link">
+                                    <svg width="60" height="65" viewBox="0 0 57 57" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M28.5 0C12.7604 0 0 12.7598 0 28.5C0 44.2402 12.7604 57 28.5 57C44.2396 57 57 44.2402 57 28.5C57 12.7598 44.2396 0 28.5 0ZM42.9567 31.5824C44.2851 32.8798 45.6904 34.1009 46.8829 35.5324C47.4112 36.1657 47.9092 36.8205 48.2882 37.557C48.8293 38.6072 48.3407 39.7589 47.4007 39.8213L41.5619 39.8201C40.0539 39.9449 38.8539 39.3367 37.8422 38.3058C37.0345 37.4841 36.2852 36.6065 35.5074 35.7569C35.1896 35.4082 34.8548 35.0799 34.456 34.8216C33.66 34.3038 32.9685 34.4624 32.5125 35.2939C32.0477 36.14 31.9416 37.0777 31.8973 38.0194C31.8337 39.3962 31.4185 39.756 30.0371 39.8207C27.0854 39.9589 24.2846 39.5111 21.6816 38.0229C19.3852 36.7103 17.6079 34.8578 16.0591 32.7603C13.0432 28.6714 10.7335 24.1837 8.65817 19.5672C8.19109 18.5275 8.5328 17.9712 9.6798 17.9496C11.5854 17.9129 13.4911 17.9175 15.3967 17.9479C16.1723 17.9601 16.6854 18.4039 16.9834 19.1357C18.0132 21.6693 19.2756 24.08 20.8576 26.3156C21.2792 26.911 21.7096 27.5046 22.3224 27.925C22.9988 28.3892 23.5143 28.2358 23.8333 27.4807C24.0374 27.0008 24.1254 26.4877 24.1698 25.9733C24.3214 24.2117 24.3394 22.4507 24.077 20.6961C23.9138 19.5981 23.2962 18.889 22.2017 18.6814C21.6443 18.5759 21.7259 18.3695 21.997 18.0511C22.4676 17.5006 22.9085 17.1601 23.7896 17.1601L30.3864 17.1589C31.4261 17.363 31.6593 17.8295 31.8005 18.8768L31.8063 26.2078C31.794 26.613 32.0098 27.8143 32.7375 28.0796C33.3207 28.272 33.7055 27.8043 34.0542 27.4352C35.6362 25.7564 36.7634 23.775 37.7728 21.7241C38.2183 20.8197 38.6026 19.8838 38.9758 18.9462C39.2533 18.2528 39.6848 17.9117 40.4674 17.9234L46.8199 17.9309C47.0071 17.9309 47.1972 17.9327 47.3826 17.9648C48.4532 18.1479 48.7465 18.6085 48.4153 19.6529C47.894 21.2938 46.8811 22.6606 45.891 24.031C44.8297 25.4981 43.6979 26.9139 42.6471 28.3875C41.6814 29.7345 41.7578 30.4126 42.9567 31.5824Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </a>
+                            </li>
+                            <li class="footer__social-item contact-social__item">
+                                <a href="#" class="footer__social-link contact-social__link">
+
+                                    <svg width="60" height="65" viewBox="0 0 57 57" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M33.9551 28.5C33.9551 31.5128 31.5128 33.9551 28.5 33.9551C25.4872 33.9551 23.0449 31.5128 23.0449 28.5C23.0449 25.4872 25.4872 23.0449 28.5 23.0449C31.5128 23.0449 33.9551 25.4872 33.9551 28.5Z"
+                                            fill="white" />
+                                        <path
+                                            d="M41.2575 18.8487C40.9953 18.1381 40.5769 17.4949 40.0333 16.967C39.5054 16.4234 38.8626 16.0051 38.1516 15.7428C37.575 15.5189 36.7087 15.2523 35.1132 15.1797C33.3871 15.1009 32.8696 15.084 28.5 15.084C24.1299 15.084 23.6124 15.1005 21.8868 15.1792C20.2913 15.2523 19.4246 15.5189 18.8484 15.7428C18.1374 16.0051 17.4942 16.4234 16.9667 16.967C16.4231 17.4949 16.0047 18.1377 15.7421 18.8487C15.5181 19.4253 15.2515 20.2921 15.1789 21.8876C15.1002 23.6132 15.0832 24.1307 15.0832 28.5008C15.0832 32.8704 15.1002 33.3879 15.1789 35.1139C15.2515 36.7095 15.5181 37.5757 15.7421 38.1524C16.0047 38.8634 16.4226 39.5062 16.9662 40.0341C17.4942 40.5777 18.1369 40.996 18.8479 41.2583C19.4246 41.4827 20.2913 41.7492 21.8868 41.8219C23.6124 41.9006 24.1295 41.9171 28.4996 41.9171C32.8701 41.9171 33.3876 41.9006 35.1127 41.8219C36.7083 41.7492 37.575 41.4827 38.1516 41.2583C39.5789 40.7077 40.707 39.5797 41.2575 38.1524C41.4815 37.5757 41.748 36.7095 41.8211 35.1139C41.8998 33.3879 41.9163 32.8704 41.9163 28.5008C41.9163 24.1307 41.8998 23.6132 41.8211 21.8876C41.7485 20.2921 41.4819 19.4253 41.2575 18.8487ZM28.5 36.9039C23.8586 36.9039 20.096 33.1418 20.096 28.5003C20.096 23.8589 23.8586 20.0968 28.5 20.0968C33.141 20.0968 36.9035 23.8589 36.9035 28.5003C36.9035 33.1418 33.141 36.9039 28.5 36.9039ZM37.2358 21.7284C36.1512 21.7284 35.2719 20.8491 35.2719 19.7645C35.2719 18.68 36.1512 17.8007 37.2358 17.8007C38.3204 17.8007 39.1997 18.68 39.1997 19.7645C39.1992 20.8491 38.3204 21.7284 37.2358 21.7284Z"
+                                            fill="white" />
+                                        <path
+                                            d="M28.5 0C12.7623 0 0 12.7623 0 28.5C0 44.2377 12.7623 57 28.5 57C44.2377 57 57 44.2377 57 28.5C57 12.7623 44.2377 0 28.5 0ZM44.7665 35.2471C44.6874 36.9892 44.4104 38.1786 44.0059 39.2197C43.1557 41.418 41.418 43.1557 39.2197 44.0059C38.179 44.4104 36.9892 44.6869 35.2475 44.7665C33.5024 44.8461 32.9449 44.8652 28.5004 44.8652C24.0556 44.8652 23.4985 44.8461 21.7529 44.7665C20.0112 44.6869 18.8214 44.4104 17.7808 44.0059C16.6883 43.595 15.6994 42.9509 14.8819 42.1181C14.0495 41.301 13.4055 40.3117 12.9945 39.2197C12.5901 38.179 12.3131 36.9892 12.2339 35.2475C12.1535 33.5019 12.1348 32.9444 12.1348 28.5C12.1348 24.0556 12.1535 23.4981 12.2335 21.7529C12.3126 20.0108 12.5892 18.8214 12.9936 17.7803C13.4046 16.6883 14.0491 15.699 14.8819 14.8819C15.699 14.0491 16.6883 13.405 17.7803 12.9941C18.8214 12.5896 20.0108 12.3131 21.7529 12.2335C23.4981 12.1539 24.0556 12.1348 28.5 12.1348C32.9444 12.1348 33.5019 12.1539 35.2471 12.2339C36.9892 12.3131 38.1786 12.5896 39.2197 12.9936C40.3117 13.4046 41.301 14.0491 42.1186 14.8819C42.9509 15.6994 43.5954 16.6883 44.0059 17.7803C44.4108 18.8214 44.6874 20.0108 44.767 21.7529C44.8465 23.4981 44.8652 24.0556 44.8652 28.5C44.8652 32.9444 44.8465 33.5019 44.7665 35.2471Z"
+                                            fill="white" />
+                                    </svg>
+
+
+                                </a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="footer-img">
+                    <img src="images/map.jpg" alt="">
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div id="modal-record" class="modal-record modal">
+        <div class="modal__record-body modal-body">
+            <div class="modal__container">
+
+                <div class="questionnaire-wrapper">
+                   
+                    <article class="questionnaire-item">
+                        <h2 class="subscription__item-title questionnaire-title">
+                            Оформить обратный звонок
+                        </h2>
+
+                        <form class="form form-4" action="/">
+                            
+                            <div class="questionnaire-block subscription-block">
+                                <label class="questionnaire-el subscription-el__fullname">
+                                    <div class="subscription__el-title form__title"> ФИО</div>
+                                    <input type="text" name="fullname" data-validate-field="fullname"
+                                        class="inp-text subscription__field subscription__fullname form__field"
+                                        placeholder="Мурсалов Мурсал">
+                                </label>
+                                <label class="questionnaire-el subscription__el-phone">
+                                    <div class="subscription__title-two form__title">
+                                        Телефон
+                                    </div>
+                                    <input class="subscription__phone-inp form__field" name="tel"
+                                        data-validate-field="tel" type="tel" placeholder="+7 (900) 000 00-00">
+
+                                </label>
+                            </div>
+                            <div class="modal-btn__wrap">
+                                <button type="submit" class="btn modal-btn">
+                                    Отправить заявку
+                                </button>
+                                <button data-fancybox-close class="btn-close">
+                                    Закрыть
+                                </button>
+                            </div>
+                        </form>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
